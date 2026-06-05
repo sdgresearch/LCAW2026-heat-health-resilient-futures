@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainable Design Group — University of Cambridge</title>
+  <meta name="description" content="The Sustainable Design Group at the University of Cambridge — a world map of research projects at the intersection of design, environmental performance, and social equity." />
+  <meta name="theme-color" content="#080c14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sustainable Design Group — University of Cambridge" />
+  <meta property="og:description" content="Explore our global research projects in sustainable design." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="header-brand" aria-label="Sustainable Design Group — Home">
+        <img src="assets/sdg-logo.svg" alt="" class="header-logo" width="28" height="28" />
+        <div>
+          <div class="header-title">Sustainable Design Group</div>
+          <div class="header-subtitle">University of Cambridge</div>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="https://www.arct.cam.ac.uk" target="_blank" rel="noopener">Department</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       3D GLOBE
+  ============================================================ -->
+  <div id="globe" role="application" aria-label="Interactive 3D world map of SDG research projects">
+    <p id="globe-error" hidden style="color:#8b98a9;text-align:center;padding:4rem 2rem;">
+      Unable to load the project map. Please check your connection and refresh.
+    </p>
+  </div>
+
+  <!-- ============================================================
+       MAP HINT
+  ============================================================ -->
+  <p id="map-hint" aria-hidden="true">Click a glowing marker to explore a project</p>
+
+  <!-- ============================================================
+       PROJECT PANEL
+  ============================================================ -->
+  <aside id="project-panel"
+         role="complementary"
+         aria-label="Project details"
+         aria-hidden="true">
+
+    <div class="panel-handle" aria-hidden="true"></div>
+
+    <div class="panel-top">
+      <button class="panel-close"
+              id="panel-close-btn"
+              aria-label="Close project details"
+              type="button">&#x2715;</button>
+    </div>
+
+    <div class="panel-scroll">
+      <div id="panel-content"></div>
+    </div>
+
+  </aside>
+
+  <!-- ============================================================
+       LEGEND
+  ============================================================ -->
+  <div class="map-legend" aria-label="Map legend" role="img">
+    <div class="legend-item">
+      <span class="legend-dot active"></span>
+      <span>Active project</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot completed"></span>
+      <span>Completed project</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABOUT MODAL
+  ============================================================ -->
+  <dialog id="about-modal" aria-labelledby="about-title">
+    <div class="modal-header">
+      <h2 id="about-title">About the Group</h2>
+      <button class="modal-close" type="button" aria-label="Close">&#x2715;</button>
+    </div>
+    <p>
+      The Sustainable Design Group is a research collective at the Department of Architecture,
+      University of Cambridge. We explore the intersection of design practice, environmental
+      performance, and social equity — working with communities across the globe.
+    </p>
+    <p>
+      Each marker on this map represents an active or completed research project. Click any
+      marker to learn more about the work, the team involved, and links to publications.
+    </p>
+    <a href="https://www.arct.cam.ac.uk" target="_blank" rel="noopener" class="modal-link">
+      Visit the Department of Architecture &#x2197;
+    </a>
+  </dialog>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://unpkg.com/globe.gl@2/dist/globe.gl.min.js"></script>
+  <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/globe.js"></script>
+
+</body>
+</html>
