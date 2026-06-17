@@ -3,54 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sustainable Design Group — University of Cambridge</title>
-  <meta name="description" content="The Sustainable Design Group at the University of Cambridge — a world map of research projects at the intersection of design, environmental performance, and social equity." />
-  <meta name="theme-color" content="#080c14" />
+  <title>Health &amp; Climate Action — Cambridge Sustainable Design Group</title>
+  <meta name="description" content="Health and Climate Action for Equitable Heat-Resilient Futures — a public event by the Cambridge Sustainable Design Group and LSHTM Climate and Health Group." />
+  <meta name="theme-color" content="#0D3D37" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Sustainable Design Group — University of Cambridge" />
-  <meta property="og:description" content="Explore our global research projects in sustainable design." />
+  <meta property="og:title" content="Health &amp; Climate Action for Equitable Heat-Resilient Futures" />
+  <meta property="og:description" content="24 June 2026 · John Snow Lecture Theatre, LSHTM, London. Public talks and panel on heat, health, and urban adaptation." />
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="tab-map-active">
 
   <!-- ============================================================
        HEADER
   ============================================================ -->
   <header class="site-header" role="banner">
     <div class="header-inner">
-      <a href="/" class="header-brand" aria-label="Sustainable Design Group — Home">
-        <img src="assets/sdg-logo.svg" alt="" class="header-logo" width="28" height="28" />
-        <div>
-          <div class="header-title">Sustainable Design Group</div>
-          <div class="header-subtitle">University of Cambridge</div>
-        </div>
-      </a>
       <nav class="header-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="https://www.arct.cam.ac.uk" target="_blank" rel="noopener">Department</a>
+        <a href="#" data-modal="about-sdg">Cambridge SDG</a>
+        <a href="#" data-modal="about-lshtm">LSHTM Climate and Health</a>
       </nav>
     </div>
   </header>
 
   <!-- ============================================================
-       3D GLOBE
+       EVENT TOGGLE BAR
   ============================================================ -->
-  <div id="globe" role="application" aria-label="Interactive 3D world map of SDG research projects">
-    <p id="globe-error" hidden style="color:#8b98a9;text-align:center;padding:4rem 2rem;">
-      Unable to load the project map. Please check your connection and refresh.
-    </p>
+  <div class="event-toggle-bar">
+    <div class="event-toggle-inner">
+      <div class="event-toggle-summary">
+        <span class="event-toggle-tag">24 June 2026 &nbsp;&middot;&nbsp; LSHTM, London</span>
+        <span class="event-toggle-name">Health and Climate Action for Equitable Heat-Resilient Futures</span>
+      </div>
+      <button class="event-toggle-btn"
+              id="event-toggle-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="event-hero">
+        Event details <span class="toggle-arrow" aria-hidden="true">&#x2335;</span>
+      </button>
+    </div>
   </div>
 
   <!-- ============================================================
-       MAP HINT
+       EVENT HERO (collapsed by default)
+  ============================================================ -->
+  <section class="event-hero" id="event-hero" aria-labelledby="event-title">
+    <div class="event-hero-inner">
+      <p class="event-label">Upcoming Event &mdash; London Climate Action Week 2026</p>
+      <h1 class="event-title" id="event-title">
+        Health and Climate Action for<br class="br-desktop" /> Equitable Heat-Resilient Futures
+      </h1>
+      <div class="event-meta-grid">
+        <div class="event-meta-item">
+          <span class="meta-icon" aria-hidden="true">&#x1F4C5;</span>
+          <div class="meta-text">
+            <span class="meta-label">Date</span>
+            <span class="meta-value">Wednesday, 24 June 2026</span>
+          </div>
+        </div>
+        <div class="event-meta-item">
+          <span class="meta-icon" aria-hidden="true">&#x1F551;</span>
+          <div class="meta-text">
+            <span class="meta-label">Time</span>
+            <span class="meta-value">2:00 &ndash; 5:00 PM &nbsp;&middot;&nbsp; Doors 1:30 PM</span>
+          </div>
+        </div>
+        <div class="event-meta-item">
+          <span class="meta-icon" aria-hidden="true">&#x1F4CD;</span>
+          <div class="meta-text">
+            <span class="meta-label">Venue</span>
+            <span class="meta-value">John Snow Lecture Theatre, LSHTM, London WC1E&nbsp;7HT</span>
+          </div>
+        </div>
+      </div>
+      <p class="event-description">
+        This public event explores rising temperatures as a critical climate health threat, bringing together early-career researchers and practitioners from across the globe. The programme features lightning talks examining heat and health in diverse everyday environments, followed by an interdisciplinary panel on adaptation strategies for cities and buildings worldwide.
+      </p>
+      <a href="https://www.eventbrite.co.uk/e/health-and-climate-action-for-equitable-heat-resilient-futures-tickets-1991208576454"
+         target="_blank" rel="noopener"
+         class="btn-register">
+        Register on Eventbrite &#x2197;
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT — TABS
+  ============================================================ -->
+  <section class="main-content">
+
+    <!-- Tab Navigation -->
+    <div class="tab-nav" role="tablist" aria-label="Content view">
+      <button class="tab-btn is-active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab-map"
+              id="tabBtn-map"
+              data-tab="map">
+        Map
+      </button>
+      <button class="tab-btn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-projects"
+              id="tabBtn-projects"
+              data-tab="projects"
+              tabindex="-1">
+        Projects
+      </button>
+    </div>
+
+    <!-- Map Tab Panel -->
+    <div id="tab-map" role="tabpanel" aria-labelledby="tabBtn-map" class="tab-panel">
+      <div id="globe" role="application" aria-label="Interactive 3D world map of SDG research projects">
+        <p id="globe-error" hidden style="color:var(--muted);text-align:center;padding:4rem 2rem;">
+          Unable to load the project map. Please check your connection and refresh.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projects Tab Panel -->
+    <div id="tab-projects" role="tabpanel" aria-labelledby="tabBtn-projects" class="tab-panel" hidden>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       MAP HINT (fixed overlay — visible only on map tab)
   ============================================================ -->
   <p id="map-hint" aria-hidden="true">Click a glowing marker to explore a project</p>
 
   <!-- ============================================================
-       PROJECT PANEL
+       LEGEND (fixed overlay — visible only on map tab)
+  ============================================================ -->
+  <div class="map-legend" aria-label="Map legend" role="img">
+    <div class="legend-item">
+      <span class="legend-dot cambridge"></span>
+      <span>Cambridge SDG</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot lshtm"></span>
+      <span>LSHTM</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PROJECT PANEL (fixed overlay)
   ============================================================ -->
   <aside id="project-panel"
          role="complementary"
@@ -73,39 +175,73 @@
   </aside>
 
   <!-- ============================================================
-       LEGEND
+       FOOTER — PARTNER LOGOS
   ============================================================ -->
-  <div class="map-legend" aria-label="Map legend" role="img">
-    <div class="legend-item">
-      <span class="legend-dot active"></span>
-      <span>Active project</span>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-label">In partnership with</p>
+      <div class="footer-logos">
+        <img src="assets/logos/LCAW Logos/LCAW_Primary_Logo.jpg"
+             alt="London Climate Action Week"
+             class="footer-logo" />
+        <img src="assets/logos/Uni logos/CSDG_transparent.png"
+             alt="Cambridge Sustainable Design Group"
+             class="footer-logo" />
+        <img src="assets/logos/Uni logos/LSHTM_transparent.png"
+             alt="London School of Hygiene and Tropical Medicine"
+             class="footer-logo" />
+      </div>
     </div>
-    <div class="legend-item">
-      <span class="legend-dot completed"></span>
-      <span>Completed project</span>
-    </div>
-  </div>
+  </footer>
 
   <!-- ============================================================
        ABOUT MODAL
   ============================================================ -->
-  <dialog id="about-modal" aria-labelledby="about-title">
+  <dialog id="about-sdg" aria-labelledby="about-sdg-title">
     <div class="modal-header">
-      <h2 id="about-title">About the Group</h2>
+      <h2 id="about-sdg-title">Cambridge Sustainable Design Group</h2>
       <button class="modal-close" type="button" aria-label="Close">&#x2715;</button>
     </div>
-    <p>
-      The Sustainable Design Group is a research collective at the Department of Architecture,
-      University of Cambridge. We explore the intersection of design practice, environmental
-      performance, and social equity — working with communities across the globe.
-    </p>
-    <p>
-      Each marker on this map represents an active or completed research project. Click any
-      marker to learn more about the work, the team involved, and links to publications.
-    </p>
-    <a href="https://www.arct.cam.ac.uk" target="_blank" rel="noopener" class="modal-link">
-      Visit the Department of Architecture &#x2197;
-    </a>
+    <div class="modal-body">
+      <p>
+        The Cambridge Sustainable Design Group investigates the relationship between architectural
+        design and planetary health. Our central belief is that buildings, neighbourhoods, and
+        cities significantly shape human environmental exposure, behavioural patterns, and
+        ultimately health and energy outcomes.
+      </p>
+      <p>
+        We integrate building physics, epidemiology, and behavioural science with computational
+        technologies including machine learning and AI &mdash; developing evidence-based strategies
+        for sustainable, healthy living environments through cross-disciplinary collaboration among
+        architects, health scientists, and environmental specialists.
+      </p>
+      <a href="https://www.sustainabledesign.arct.cam.ac.uk/about-us" target="_blank" rel="noopener" class="modal-link">
+        About the Cambridge Sustainable Design Group &#x2197;
+      </a>
+    </div>
+  </dialog>
+
+  <dialog id="about-lshtm" aria-labelledby="about-lshtm-title">
+    <div class="modal-header">
+      <h2 id="about-lshtm-title">LSHTM Climate and Health Group</h2>
+      <button class="modal-close" type="button" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <p>
+        The Climate and Health Group at the London School of Hygiene &amp; Tropical Medicine is
+        an interdisciplinary group of researchers investigating the health impacts associated with
+        climate variability and change. The group generates evidence on the health impacts of key
+        climate hazards and the actions needed to protect public health.
+      </p>
+      <p>
+        The group hosts the NIHR Health Protection Research Unit on Climate Change and Health
+        Security, working in collaboration with the UK Health Security Agency, University College
+        London, and the Met Office to inform UK and global public health policy.
+      </p>
+      <a href="https://www.lshtm.ac.uk/research/centres-projects-groups/climate-health-group" target="_blank" rel="noopener" class="modal-link">
+        Visit the Climate and Health Group &#x2197;
+      </a>
+    </div>
   </dialog>
 
   <!-- ============================================================
@@ -115,6 +251,7 @@
   <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/tabs.js"></script>
   <script src="js/globe.js"></script>
 
 </body>

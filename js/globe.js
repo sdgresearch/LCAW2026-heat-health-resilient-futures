@@ -5,8 +5,8 @@ window.SDG = window.SDG || {};
 
   var globe = Globe()
     .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg')
-    .backgroundImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png')
-    .atmosphereColor('#6ab4f5')
+    .backgroundColor('#0D3D37')
+    .atmosphereColor('#6BB5C0')
     .atmosphereAltitude(0.2)
     .width(container.offsetWidth || window.innerWidth)
     .height(container.offsetHeight || window.innerHeight)
@@ -23,7 +23,21 @@ window.SDG = window.SDG || {};
 
   SDG.globe = globe;
 
-  SDG.loadProjects('data/projects.csv').then(function (projects) {
+  function univColor(d) {
+    return d.university === 'lshtm' ? '#5A8055' : '#3D8A7A';
+  }
+
+  function univRingBase(d) {
+    return d.university === 'lshtm' ? '90,128,85' : '61,138,122';
+  }
+
+  function arcOrigin(p) {
+    return p.university === 'lshtm'
+      ? { lat: 51.5194, lng: -0.1270 }   /* LSHTM, London */
+      : { lat: 52.2053, lng:  0.1218 };  /* Cambridge */
+  }
+
+  SDG.loadProjects('data/London Climate Week Showcase(1-6).csv').then(function (projects) {
     SDG.projects = projects;
 
     globe
@@ -31,7 +45,7 @@ window.SDG = window.SDG || {};
       .ringLat(function (d) { return d.lat; })
       .ringLng(function (d) { return d.lng; })
       .ringColor(function (d) {
-        var base = d.status === 'active' ? '232,176,32' : '106,180,245';
+        var base = univRingBase(d);
         return function (t) { return 'rgba(' + base + ',' + (1 - t) + ')'; };
       })
       .ringMaxRadius(2.5)
@@ -43,7 +57,7 @@ window.SDG = window.SDG || {};
       .pointsData(projects)
       .pointLat(function (d) { return d.lat; })
       .pointLng(function (d) { return d.lng; })
-      .pointColor(function (d) { return d.status === 'active' ? '#E8B020' : '#6ab4f5'; })
+      .pointColor(function (d) { return univColor(d); })
       .pointRadius(0.4)
       .pointAltitude(0.01)
       .pointResolution(12)
@@ -62,21 +76,29 @@ window.SDG = window.SDG || {};
 
     globe
       .arcsData(projects.map(function (p) {
-        return { startLat: 52.2053, startLng: 0.1218, endLat: p.lat, endLng: p.lng, project: p };
+        var origin = arcOrigin(p);
+        return { startLat: origin.lat, startLng: origin.lng, endLat: p.lat, endLng: p.lng, project: p };
       }))
       .arcStartLat(function (d) { return d.startLat; })
       .arcStartLng(function (d) { return d.startLng; })
       .arcEndLat(function (d) { return d.endLat; })
       .arcEndLng(function (d) { return d.endLng; })
-      .arcColor(function () { return ['rgba(0,59,111,0.5)', 'rgba(232,176,32,0.5)']; })
+      .arcColor(function (d) {
+        var col = d.project.university === 'lshtm'
+          ? 'rgba(90,128,85,0.45)'
+          : 'rgba(61,138,122,0.45)';
+        return [col, 'rgba(240,147,60,0.45)'];
+      })
       .arcDashLength(0.35)
       .arcDashGap(0.15)
       .arcDashAnimateTime(4500)
       .arcStroke(0.35)
       .arcAltitudeAutoScale(0.28);
 
+    if (SDG.onProjectsLoaded) SDG.onProjectsLoaded(projects);
+
   }).catch(function (err) {
-    console.error('SDG: could not load projects.csv —', err);
+    console.error('SDG: could not load projects CSV —', err);
     document.getElementById('globe-error').removeAttribute('hidden');
   });
 
