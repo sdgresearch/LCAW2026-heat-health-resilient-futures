@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mobile-first visual story on built environment, everyday pathways and health.">
+  <title>Where You Live Shapes Your Health</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/pathway-data.js" defer></script>
+  <script src="js/pathway-graph-data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="page story-page">
+    <section class="hero hero-stage story-slot" aria-labelledby="page-title">
+      <img class="hero-bg" src="assets/images/reference-extracts/viva-slide-01-image-1.jpg" alt="Aerial view of homes, streets and greenery">
+      <div class="hero-copy">
+        <span class="eyebrow">London Climate Action Week 2026</span>
+        <h1 id="page-title">Where You Live Shapes Your Health</h1>
+        <p class="subtitle" id="storyHook">Health is also built into homes, streets and everyday routes.</p>
+      </div>
+    </section>
+
+    <section class="story-slot problem-slot" aria-labelledby="problem-title">
+      <span class="slot-kicker">Problem</span>
+      <h2 id="problem-title">Different Places, Different Health Pathways</h2>
+      <p class="slot-note" id="problemText">Built environment factors change what people feel, breathe and do. The pathway is never one-size-fits-all.</p>
+      <div class="visual-card-grid" id="problemGrid"></div>
+    </section>
+
+    <section class="story-slot key-findings-slot" aria-labelledby="key-findings-title">
+      <span class="slot-kicker">Key findings</span>
+      <h2 id="key-findings-title">From Place To Pathways</h2>
+      <p class="slot-note" id="keyFindingsText">Tap a place factor. See the metric, then follow exposure and behaviour in parallel.</p>
+
+      <div class="factor-tabs" id="factorTabs" aria-label="Built environment factors"></div>
+      <article class="factor-story" id="factorStory" aria-live="polite"></article>
+      <aside class="story-detail is-hidden" id="storyDetail" aria-live="polite"></aside>
+    </section>
+
+    <section class="story-slot gaps-slot" aria-labelledby="gaps-title">
+      <span class="slot-kicker">What this reveals</span>
+      <h2 id="gaps-title">What This Reveals</h2>
+      <p class="slot-note" id="gapsText">Environmental pathways are social pathways. Burdens and choices are not evenly shared.</p>
+      <div class="visual-card-grid compact" id="gapGrid"></div>
+    </section>
+
+    <section class="story-slot directions-slot" aria-labelledby="directions-title">
+      <span class="slot-kicker">Responses</span>
+      <h2 id="directions-title">Responses Across Scales</h2>
+      <p class="slot-note" id="directionsText">Action has to work from buildings to streets, neighbourhoods and national policy.</p>
+      <div class="visual-card-grid compact" id="directionGrid"></div>
+    </section>
+
+    <footer>
+      <span>Xu Tang · Cambridge Sustainable Design Group · University of Cambridge</span>
+      <span>London Climate Action Week 2026</span>
+    </footer>
+  </main>
+
+  <noscript>
+    <p>This page needs JavaScript to show the interactive pathway story.</p>
+  </noscript>
+</body>
+</html>

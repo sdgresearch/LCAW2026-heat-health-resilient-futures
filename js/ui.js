@@ -29,9 +29,6 @@ window.SDG = window.SDG || {};
   function closePanel() {
     panel.classList.remove('is-open');
     panel.setAttribute('aria-hidden', 'true');
-    if (SDG.globe) {
-      SDG.globe.controls().autoRotate = true;
-    }
   }
 
   function buildCardHTML(p) {
@@ -75,6 +72,11 @@ window.SDG = window.SDG || {};
       '<h2 class="project-title">' + esc(p.title) + '</h2>' +
       (tagsHTML ? '<div class="project-tags" aria-label="Tags">' + tagsHTML + '</div>' : '') +
       '<p class="project-description">' + esc(p.description) + '</p>' +
+      (p.pi ?
+        '<section class="pi-section">' +
+          '<h3 class="section-heading">Primary Investigator</h3>' +
+          '<p class="pi-name">' + esc(p.pi) + '</p>' +
+        '</section>' : '') +
       (teamHTML ?
         '<section class="team-section">' +
           '<h3 class="section-heading">Team</h3>' +
@@ -125,15 +127,5 @@ window.SDG = window.SDG || {};
     if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
     modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
   });
-
-  var eventToggleBtn  = document.getElementById('event-toggle-btn');
-  var eventHeroSection = document.getElementById('event-hero');
-
-  if (eventToggleBtn && eventHeroSection) {
-    eventToggleBtn.addEventListener('click', function () {
-      var isOpen = eventHeroSection.classList.toggle('is-open');
-      eventToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  }
 
 }());

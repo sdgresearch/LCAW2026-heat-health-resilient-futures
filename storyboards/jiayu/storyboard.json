@@ -1,0 +1,95 @@
+{
+  "page_title": "When the House Heats Up — Comfort and Adaptation in Ethiopian Social Housing",
+  "doi_url": "https://doi.org/10.1016/j.enbuild.2026.117375",
+  "sections": [
+    {
+      "slot": "title",
+      "layout": "title",
+      "theme": "title",
+      "heading": "When the house heats up, people open a window.",
+      "subtitle": "Ethiopia built hundreds of thousands of affordable flats — but few were designed for the heat inside them. A study of 317 homes in Jimma asks what 'comfortable' really means here, and how residents cope.",
+      "cover_image": "cover.png"
+    },
+    {
+      "slot": "hook",
+      "layout": "split",
+      "theme": "warm",
+      "heading": "Comfort was an afterthought",
+      "body": "Climate change is pushing indoor temperatures up, and the discomfort lands hardest in low-income housing. Since 2005, Ethiopia's Integrated Housing Development Program has delivered vast numbers of low-cost units at speed — but thermal comfort was rarely part of how they were designed or built.",
+      "figure": "figure3.png",
+      "figure_alt": "Location map of Jimma city and the studied IHDP housing sites.",
+      "image_class": "content-plot",
+      "insight": "The same standardized blocks that solved a housing shortage left occupants to manage the heat on their own."
+    },
+    {
+      "slot": "problem",
+      "layout": "quote",
+      "theme": "neutral",
+      "heading": "The gap",
+      "quote": "Limited attention has been given to thermal comfort in the design and construction of those affordable housing units.",
+      "attribution": "Asres et al., Energy & Buildings (2026)",
+      "body": "Comfort standards like ASHRAE 55 are built around modern, mechanically conditioned buildings. They travel poorly to naturally ventilated homes in the Global South, where occupants adapt so readily that a single 'neutral temperature' barely describes how they actually live."
+    },
+    {
+      "slot": "method",
+      "layout": "split_reverse",
+      "theme": "tech",
+      "heading": "Measuring comfort where people live",
+      "body": "Across the dry and wet seasons of 2023, the team monitored indoor environments with sensors and ran structured surveys in 317 IHDP houses in Jimma, drawn from a population of 1,520 households. They paired an adaptive comfort model with binary logistic regression to link how rooms feel to what residents actually do about it.",
+      "figure": "figure4.png",
+      "figure_alt": "Description of the survey respondents across the studied IHDP houses.",
+      "image_class": "content-plot"
+    },
+    {
+      "slot": "keyFinding",
+      "layout": "stats_grid",
+      "theme": "data",
+      "heading": "What the homes told us",
+      "body": "A local comfort temperature, and a behavior that switches on sharply once it's crossed.",
+      "stat_items": [
+        {"number": "25.1 °C", "label": "Adjusted local comfort temperature for these homes", "accent": "warm"},
+        {"number": "< 50%", "label": "Chance a window is open below the comfort threshold", "accent": "cool"},
+        {"number": "> 90%", "label": "Chance a window is open once it passes 30 °C", "accent": "caution"},
+        {"number": "317", "label": "IHDP homes monitored across dry and wet seasons", "accent": ""}
+      ]
+    },
+    {
+      "slot": "dataNarrative",
+      "layout": "split",
+      "theme": "neutral",
+      "heading": "A switch, not a dial",
+      "body": "Window opening doesn't ramp up gently with heat — it flips. Below the comfort temperature, residents mostly keep windows shut; above 30 °C, almost everyone opens them. Indoor and outdoor temperature are the strongest predictors of that choice, with the fitted model giving logit(Pw) = 0.448·Tin − 11.01 (n = 317, p < 0.001).",
+      "figure": "figure12.png",
+      "figure_alt": "Logistic relationship between the probability of window opening and temperature.",
+      "image_class": "content-plot",
+      "insight": "Window operability isn't a convenience here — it's the primary thermostat residents have."
+    },
+    {
+      "slot": "secondaryFinding",
+      "layout": "split_reverse",
+      "theme": "data",
+      "heading": "How residents keep cool",
+      "body": "Opening windows is the front line, but it sits within a wider repertoire of low-tech adaptations — adjusting clothing, shifting activities, and using what few appliances are available. Where these options are blocked by building design or cost, occupants are left exposed, and that constraint is itself a design failure.",
+      "figure": "figure7.png",
+      "figure_alt": "Widely used adaptive measures occupants take to keep indoor space cool.",
+      "image_class": "content-plot"
+    },
+    {
+      "slot": "insight",
+      "layout": "insight",
+      "theme": "insight",
+      "heading": "Design for the heat, not around it",
+      "body": "Comfort in these homes is built on behavior the design never planned for. Treating window operability, orientation, and ventilation as first-class concerns — not afterthoughts — would let Ethiopia's next wave of high-rise affordable housing keep residents comfortable instead of leaving them to improvise.",
+      "cta": "Integrate thermal comfort and window operability into the design of massive high-rise residential housing developments."
+    },
+    {
+      "slot": "credits",
+      "layout": "credits",
+      "theme": "footer",
+      "heading": "Credits",
+      "authors": "Belsti Asres, Jiayu Pan, Ronita Bardhan & Esayas Alemayehu",
+      "affiliations": "Dilla University · University of Cambridge · Jimma University. Published in Energy & Buildings 360 (2026) 117375.",
+      "doi_url": "https://doi.org/10.1016/j.enbuild.2026.117375"
+    }
+  ]
+}

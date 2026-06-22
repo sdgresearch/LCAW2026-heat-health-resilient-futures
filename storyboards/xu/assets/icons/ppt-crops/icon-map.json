@@ -1,0 +1,354 @@
+[
+  {
+    "id": "poster_pic_01",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-01.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "Picture 4",
+    "originalMedia": "image3.png",
+    "originalSize": [
+      1673,
+      241
+    ],
+    "cropPercent": {
+      "r": 60038
+    },
+    "cropPixels": [
+      0,
+      0,
+      669,
+      241
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "14576145",
+        "y": "41131226"
+      },
+      "ext": {
+        "cx": "3631874",
+        "cy": "1347579"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_02",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-02.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "Picture 5",
+    "originalMedia": "image4.png",
+    "originalSize": [
+      1549,
+      402
+    ],
+    "cropPercent": {
+      "l": 6929,
+      "t": 18247,
+      "r": 6043,
+      "b": 17469
+    },
+    "cropPixels": [
+      107,
+      73,
+      1455,
+      332
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "23224113",
+        "y": "41220700"
+      },
+      "ext": {
+        "cx": "6329091",
+        "cy": "1217444"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_03",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-03.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "Picture 8",
+    "originalMedia": "image5.png",
+    "originalSize": [
+      331,
+      152
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      331,
+      152
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "19457325",
+        "y": "41251391"
+      },
+      "ext": {
+        "cx": "2517482",
+        "cy": "1156061"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_04",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-04.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "Picture 7",
+    "originalMedia": "image6.png",
+    "originalSize": [
+      3633,
+      433
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      3633,
+      433
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "0",
+        "y": "31319"
+      },
+      "ext": {
+        "cx": "30275213",
+        "cy": "3600000"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_05",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-05.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 40",
+    "originalMedia": "image8.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "cropPercent": {
+      "l": 9215,
+      "t": 10234,
+      "r": 9215,
+      "b": 18390
+    },
+    "cropPixels": [
+      142,
+      105,
+      1394,
+      836
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "9752132",
+        "y": "18736070"
+      },
+      "ext": {
+        "cx": "4024278",
+        "cy": "2468265"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_06",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-06.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 41",
+    "originalMedia": "image9.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "cropPercent": {
+      "l": 25393,
+      "t": 9399,
+      "r": 25393,
+      "b": 9399
+    },
+    "cropPixels": [
+      390,
+      96,
+      1146,
+      928
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "807261",
+        "y": "17912971"
+      },
+      "ext": {
+        "cx": "2692093",
+        "cy": "2961302"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_07",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-07.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 61",
+    "originalMedia": "image11.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "cropPercent": {
+      "l": 35624,
+      "t": 22274,
+      "r": 35624,
+      "b": 22274
+    },
+    "cropPixels": [
+      547,
+      228,
+      989,
+      796
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "892561",
+        "y": "11745178"
+      },
+      "ext": {
+        "cx": "2520000",
+        "cy": "3240000"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_08",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-08.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 89",
+    "originalMedia": "image13.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "585718",
+        "y": "28768641"
+      },
+      "ext": {
+        "cx": "3135180",
+        "cy": "3135180"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_09",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-09.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 121",
+    "originalMedia": "image17.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "633379",
+        "y": "23184205"
+      },
+      "ext": {
+        "cx": "3016494",
+        "cy": "3016494"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_10",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-10.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 190",
+    "originalMedia": "image18.png",
+    "originalSize": [
+      1024,
+      1536
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "23918918",
+        "y": "5839803"
+      },
+      "ext": {
+        "cx": "2550766",
+        "cy": "3826149"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster_pic_11",
+    "file": "assets/icons/ppt-crops/poster-slide-01-picture-11.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "pictureName": "图片 193",
+    "originalMedia": "image19.png",
+    "originalSize": [
+      1024,
+      1536
+    ],
+    "cropPercent": {},
+    "cropPixels": [
+      0,
+      0,
+      1024,
+      1536
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "15351601",
+        "y": "4894896"
+      },
+      "ext": {
+        "cx": "2934137",
+        "cy": "4401205"
+      }
+    },
+    "suggestedUse": ""
+  }
+]

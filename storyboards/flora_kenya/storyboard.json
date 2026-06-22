@@ -1,0 +1,98 @@
+{
+  "page_title": "Screened Eaves — Cooling Homes and Stopping Malaria in Kenya",
+  "doi_url": "https://doi.org/10.1088/2752-5309/adedab",
+  "sections": [
+    {
+      "slot": "title",
+      "layout": "title",
+      "theme": "title",
+      "heading": "The screen that stops mosquitoes can also cool the house.",
+      "subtitle": "In Kisumu, Kenya, indoor heat and malaria are two halves of one problem. A study of 138 residents and their homes asks whether one low-cost design fix — screened open eaves — can ease both at once.",
+      "cover_image": "cover.png"
+    },
+    {
+      "slot": "hook",
+      "layout": "split",
+      "theme": "warm",
+      "heading": "Two threats, one room",
+      "body": "Across the Global South, a warming climate is escalating extreme heat and the spread of vector-borne disease together. Roughly 75% of Kenya's population — about 43.6 million people — is vulnerable to malaria, with prevalence in the Lake-endemic zone around Kisumu reaching 27%. And the two threats feed each other: mosquitoes home in on the heat signatures and body odor that hot, crowded rooms intensify.",
+      "figure": "figure2.png",
+      "figure_alt": "Map locating the study area in Kisumu, Kenya, within Africa, with satellite imagery.",
+      "image_class": "content-image",
+      "insight": "Warmer air doesn't just make homes uncomfortable — it makes the people inside them easier for mosquitoes to find."
+    },
+    {
+      "slot": "problem",
+      "layout": "split_reverse",
+      "theme": "neutral",
+      "heading": "A design caught in a bind",
+      "body": "The instinctive defense against mosquitoes is to seal the house — close the eaves, shut the windows. But that traps heat and cooking smoke indoors. Open it up for ventilation and the insects come in. Traditional homes are stuck choosing which risk to live with, and the people most exposed are those in overcrowded, poorly ventilated rooms.",
+      "figure": "figure4.png",
+      "figure_alt": "Thermal infrared images of a home's bedroom, kitchen, and living room surface temperatures.",
+      "image_class": "content-image"
+    },
+    {
+      "slot": "method",
+      "layout": "split",
+      "theme": "tech",
+      "heading": "Measuring a coupled risk",
+      "body": "The team built a coupled health-risk framework aligned with the IPCC's structure of exposure, vulnerability, and hazard — applied to both indoor overheating and malaria at once. It fuses three evidence streams: on-site field measurements, computational fluid dynamics simulations of airflow, and questionnaire surveys of 138 residents across thirty rural homes, in their original designs and modified forms.",
+      "figure": "figure5.png",
+      "figure_alt": "Coupled health risk assessment framework combining CFD simulation, field measurement, and survey.",
+      "image_class": "content-image"
+    },
+    {
+      "slot": "keyFinding",
+      "layout": "stats_grid",
+      "theme": "data",
+      "heading": "Inside the homes",
+      "body": "Measured and simulated indoor conditions show how widespread the heat burden already is — and how much a simple opening can shave off.",
+      "stat_items": [
+        {"number": "70%", "label": "Of indoor air exceeds 30 °C across the studied homes", "accent": "caution"},
+        {"number": "10%", "label": "Of indoor air exceeds 35 °C; over 10% of homes face extreme heat stress", "accent": "extreme"},
+        {"number": "4–15%", "label": "Reduction in indoor overheating from open eaves and windows vs. closed", "accent": "cool"},
+        {"number": "138", "label": "Residents surveyed across thirty rural homes in Kisumu", "accent": ""}
+      ]
+    },
+    {
+      "slot": "dataNarrative",
+      "layout": "split",
+      "theme": "neutral",
+      "heading": "Cooking turns up the heat",
+      "body": "Where people cook indoors, air temperature spikes — in the highest-risk homes, much of the room's air volume climbs past 35 °C during cooking. Overcrowding, indoor cooking, and poor ventilation compound to raise both exposure and vulnerability, concentrating the worst conditions in the same households least able to adapt.",
+      "figure": "figure7.png",
+      "figure_alt": "Air temperature distribution while cooking in high-risk homes, with extreme-risk homes exceeding 35 degrees C.",
+      "image_class": "content-plot",
+      "insight": "The hazard isn't evenly spread — it clusters in the homes where heat, smoke, and mosquito exposure already overlap."
+    },
+    {
+      "slot": "secondaryFinding",
+      "layout": "comparison",
+      "theme": "data",
+      "heading": "Three levers, three trade-offs",
+      "body": "No single opening solves both problems. The intervention has to be read against how each building feature shifts heat, airflow, and insect entry together.",
+      "columns": [
+        {"heading": "Open eaves", "body": "Roof-level openings promote airflow and pull heat out — cooling the room with little downside on their own.", "accent": "cool"},
+        {"heading": "Windows", "body": "Conflicting effects: they help vent heat, but also widen the path for mosquitoes to get in.", "accent": "caution"},
+        {"heading": "Screened eaves", "body": "Open eaves fitted with screens cut the bi-fold risk of heat and malaria — but can raise indoor air pollution if window schedules and door design aren't planned around them.", "accent": "warm"}
+      ]
+    },
+    {
+      "slot": "insight",
+      "layout": "insight",
+      "theme": "insight",
+      "heading": "Right fix, designed in context",
+      "body": "Screened open eaves are a genuinely low-cost way to ease two coupled climate-health risks at once — but only when the rest of the home is designed around them. Window-opening schedules, door design, and cooking arrangements all decide whether the intervention helps or quietly trades one hazard for another. The lesson is that adaptation in vulnerable neighborhoods has to be coupled, not piecemeal.",
+      "cta": "Design eaves, windows, doors, and daily routines together — so cooling the home doesn't reopen the door to malaria or smoke."
+    },
+    {
+      "slot": "credits",
+      "layout": "credits",
+      "theme": "footer",
+      "heading": "Credits",
+      "authors": "Haiwei Li, Haimavati Raman, Bernard Abong'o, Teresa Bange, Yongling Zhao, Carol Brayne & Ronita Bardhan",
+      "affiliations": "University of Cambridge · Kenya Medical Research Institute (Kisumu) · ETH Zürich. Published in Environmental Research: Health 3 (2025) 035004.",
+      "doi_url": "https://doi.org/10.1088/2752-5309/adedab"
+    }
+  ]
+}

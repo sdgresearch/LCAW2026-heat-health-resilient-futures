@@ -14,81 +14,22 @@
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="tab-map-active">
+<body>
 
   <!-- ============================================================
        HEADER
   ============================================================ -->
   <header class="site-header" role="banner">
     <div class="header-inner">
+      <a class="header-logo-link" href="https://www.londonclimateactionweek.org/" target="_blank" rel="noopener" aria-label="London Climate Action Week">
+        <img src="assets/logos/LCAW Logos/London Climate Action Week Logo White.png" alt="London Climate Action Week" class="header-logo" />
+      </a>
       <nav class="header-nav" aria-label="Primary navigation">
         <a href="#" data-modal="about-sdg">Cambridge SDG</a>
         <a href="#" data-modal="about-lshtm">LSHTM Climate and Health</a>
       </nav>
     </div>
   </header>
-
-  <!-- ============================================================
-       EVENT TOGGLE BAR
-  ============================================================ -->
-  <div class="event-toggle-bar">
-    <div class="event-toggle-inner">
-      <div class="event-toggle-summary">
-        <span class="event-toggle-tag">24 June 2026 &nbsp;&middot;&nbsp; LSHTM, London</span>
-        <span class="event-toggle-name">Health and Climate Action for Equitable Heat-Resilient Futures</span>
-      </div>
-      <button class="event-toggle-btn"
-              id="event-toggle-btn"
-              type="button"
-              aria-expanded="false"
-              aria-controls="event-hero">
-        Event details <span class="toggle-arrow" aria-hidden="true">&#x2335;</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       EVENT HERO (collapsed by default)
-  ============================================================ -->
-  <section class="event-hero" id="event-hero" aria-labelledby="event-title">
-    <div class="event-hero-inner">
-      <p class="event-label">Upcoming Event &mdash; London Climate Action Week 2026</p>
-      <h1 class="event-title" id="event-title">
-        Health and Climate Action for<br class="br-desktop" /> Equitable Heat-Resilient Futures
-      </h1>
-      <div class="event-meta-grid">
-        <div class="event-meta-item">
-          <span class="meta-icon" aria-hidden="true">&#x1F4C5;</span>
-          <div class="meta-text">
-            <span class="meta-label">Date</span>
-            <span class="meta-value">Wednesday, 24 June 2026</span>
-          </div>
-        </div>
-        <div class="event-meta-item">
-          <span class="meta-icon" aria-hidden="true">&#x1F551;</span>
-          <div class="meta-text">
-            <span class="meta-label">Time</span>
-            <span class="meta-value">2:00 &ndash; 5:00 PM &nbsp;&middot;&nbsp; Doors 1:30 PM</span>
-          </div>
-        </div>
-        <div class="event-meta-item">
-          <span class="meta-icon" aria-hidden="true">&#x1F4CD;</span>
-          <div class="meta-text">
-            <span class="meta-label">Venue</span>
-            <span class="meta-value">John Snow Lecture Theatre, LSHTM, London WC1E&nbsp;7HT</span>
-          </div>
-        </div>
-      </div>
-      <p class="event-description">
-        This public event explores rising temperatures as a critical climate health threat, bringing together early-career researchers and practitioners from across the globe. The programme features lightning talks examining heat and health in diverse everyday environments, followed by an interdisciplinary panel on adaptation strategies for cities and buildings worldwide.
-      </p>
-      <a href="https://www.eventbrite.co.uk/e/health-and-climate-action-for-equitable-heat-resilient-futures-tickets-1991208576454"
-         target="_blank" rel="noopener"
-         class="btn-register">
-        Register on Eventbrite &#x2197;
-      </a>
-    </div>
-  </section>
 
   <!-- ============================================================
        MAIN CONTENT — TABS
@@ -100,9 +41,18 @@
       <button class="tab-btn is-active"
               role="tab"
               aria-selected="true"
+              aria-controls="tab-event"
+              id="tabBtn-event"
+              data-tab="event">
+        Event
+      </button>
+      <button class="tab-btn"
+              role="tab"
+              aria-selected="false"
               aria-controls="tab-map"
               id="tabBtn-map"
-              data-tab="map">
+              data-tab="map"
+              tabindex="-1">
         Map
       </button>
       <button class="tab-btn"
@@ -114,10 +64,104 @@
               tabindex="-1">
         Projects
       </button>
+      <button class="tab-btn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-storyboards"
+              id="tabBtn-storyboards"
+              data-tab="storyboards"
+              tabindex="-1">
+        Storyboards
+      </button>
+    </div>
+
+    <!-- Event Tab Panel -->
+    <div id="tab-event" role="tabpanel" aria-labelledby="tabBtn-event" class="tab-panel">
+      <div class="event-panel-inner">
+        <p class="event-label">London Climate Action Week 2026</p>
+        <h1 class="event-title" id="event-title">
+          Health and Climate Action for<br class="br-desktop" /> Equitable Heat-Resilient Futures
+        </h1>
+
+        <div class="event-meta-grid">
+          <div class="event-meta-item">
+            <span class="meta-icon" aria-hidden="true">&#x1F4C5;</span>
+            <div class="meta-text">
+              <span class="meta-label">Date</span>
+              <span class="meta-value">Wednesday, 24 June 2026</span>
+            </div>
+          </div>
+          <div class="event-meta-item">
+            <span class="meta-icon" aria-hidden="true">&#x1F551;</span>
+            <div class="meta-text">
+              <span class="meta-label">Time</span>
+              <span class="meta-value">2:00 &ndash; 5:00 PM &nbsp;&middot;&nbsp; Doors 1:30 PM</span>
+            </div>
+          </div>
+          <div class="event-meta-item">
+            <span class="meta-icon" aria-hidden="true">&#x1F4CD;</span>
+            <div class="meta-text">
+              <span class="meta-label">Venue</span>
+              <span class="meta-value">John Snow Lecture Theatre, LSHTM, London WC1E&nbsp;7HT</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="event-description">
+          This public event explores rising temperatures as a critical climate health threat, bringing together early-career researchers and practitioners from across the globe. The programme features lightning talks examining heat and health in diverse everyday environments, followed by an interdisciplinary panel on adaptation strategies for cities and buildings worldwide.
+        </p>
+
+        <a href="https://www.eventbrite.co.uk/e/health-and-climate-action-for-equitable-heat-resilient-futures-tickets-1991208576454"
+           target="_blank" rel="noopener"
+           class="btn-register">
+          Register on Eventbrite &#x2197;
+        </a>
+
+        <!-- Agenda -->
+        <section class="event-section" aria-labelledby="agenda-heading">
+          <h2 class="event-section-heading" id="agenda-heading">Programme</h2>
+          <ol class="agenda-list">
+            <li class="agenda-item">
+              <span class="agenda-time">1:30 PM</span>
+              <div class="agenda-body">
+                <h3 class="agenda-title">Doors open</h3>
+              </div>
+            </li>
+            <li class="agenda-item">
+              <span class="agenda-time">2:00 &ndash; 3:30 PM</span>
+              <div class="agenda-body">
+                <h3 class="agenda-title">Lightning Talks: Heat, Health and Everyday Environments</h3>
+                <p class="agenda-detail">Short presentations from early-career researchers on heat and health across different global contexts. Led by Professor Shakoor Hajat.</p>
+              </div>
+            </li>
+            <li class="agenda-item">
+              <span class="agenda-time">3:30 &ndash; 4:40 PM</span>
+              <div class="agenda-body">
+                <h3 class="agenda-title">Panel Discussion: Heat and Health Action</h3>
+                <p class="agenda-detail">A discussion on adaptation opportunities across cities, buildings and communities globally. Featuring Professor Ronita Bardhan.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Panel -->
+        <section class="event-section" aria-labelledby="panel-heading">
+          <h2 class="event-section-heading" id="panel-heading">Our Panel</h2>
+          <p class="event-section-sub">Heat and Health Action: What Works, What&rsquo;s Next and Who Must Act</p>
+          <div id="panelists-grid" class="speakers-grid"></div>
+        </section>
+
+        <!-- Lightning Talk Speakers -->
+        <section class="event-section" aria-labelledby="speakers-heading">
+          <h2 class="event-section-heading" id="speakers-heading">Lightning Talk Speakers</h2>
+          <p class="event-section-sub">Heat, Health and Everyday Environments</p>
+          <div id="speakers-grid" class="speakers-grid"></div>
+        </section>
+      </div>
     </div>
 
     <!-- Map Tab Panel -->
-    <div id="tab-map" role="tabpanel" aria-labelledby="tabBtn-map" class="tab-panel">
+    <div id="tab-map" role="tabpanel" aria-labelledby="tabBtn-map" class="tab-panel" hidden>
       <div id="globe" role="application" aria-label="Interactive 3D world map of SDG research projects">
         <p id="globe-error" hidden style="color:var(--muted);text-align:center;padding:4rem 2rem;">
           Unable to load the project map. Please check your connection and refresh.
@@ -128,6 +172,22 @@
     <!-- Projects Tab Panel -->
     <div id="tab-projects" role="tabpanel" aria-labelledby="tabBtn-projects" class="tab-panel" hidden>
       <div id="projects-grid" class="projects-grid"></div>
+    </div>
+
+    <!-- Storyboards Tab Panel -->
+    <div id="tab-storyboards" role="tabpanel" aria-labelledby="tabBtn-storyboards" class="tab-panel" hidden>
+      <div id="storyboards-grid" class="storyboards-grid"></div>
+      <div id="storyboard-viewer" hidden>
+        <div class="storyboard-viewer-bar">
+          <button type="button" id="storyboard-back-btn" class="storyboard-back-btn">
+            <span aria-hidden="true">&lsaquo;</span> Back to storyboards
+          </button>
+          <a href="#" id="storyboard-open-link" class="storyboard-open-link"
+             target="_blank" rel="noopener">Open in new tab &#x2197;</a>
+        </div>
+        <iframe id="storyboard-frame" class="storyboard-frame"
+                title="Project storyboard" loading="lazy"></iframe>
+      </div>
     </div>
 
   </section>
@@ -147,7 +207,7 @@
     </div>
     <div class="legend-item">
       <span class="legend-dot lshtm"></span>
-      <span>LSHTM</span>
+      <span>LSHTM Climate and Health</span>
     </div>
   </div>
 
@@ -204,16 +264,7 @@
     </div>
     <div class="modal-body">
       <p>
-        The Cambridge Sustainable Design Group investigates the relationship between architectural
-        design and planetary health. Our central belief is that buildings, neighbourhoods, and
-        cities significantly shape human environmental exposure, behavioural patterns, and
-        ultimately health and energy outcomes.
-      </p>
-      <p>
-        We integrate building physics, epidemiology, and behavioural science with computational
-        technologies including machine learning and AI &mdash; developing evidence-based strategies
-        for sustainable, healthy living environments through cross-disciplinary collaboration among
-        architects, health scientists, and environmental specialists.
+        Cambridge Sustainable Design Group (CSDG) is an interdisciplinary research group based at the University of Cambridge, led by Professor Ronita Bardhan. The group investigates how buildings, cities and infrastructure shape health, equity, energy use and climate resilience. Combining expertise in design, engineering, data science and public health, CSDG develops evidence-based solutions for healthy, low-carbon and climate-resilient living environments, with a particular focus on vulnerable communities and resource-constrained settings worldwide.
       </p>
       <a href="https://www.sustainabledesign.arct.cam.ac.uk/about-us" target="_blank" rel="noopener" class="modal-link">
         About the Cambridge Sustainable Design Group &#x2197;
@@ -228,15 +279,7 @@
     </div>
     <div class="modal-body">
       <p>
-        The Climate and Health Group at the London School of Hygiene &amp; Tropical Medicine is
-        an interdisciplinary group of researchers investigating the health impacts associated with
-        climate variability and change. The group generates evidence on the health impacts of key
-        climate hazards and the actions needed to protect public health.
-      </p>
-      <p>
-        The group hosts the NIHR Health Protection Research Unit on Climate Change and Health
-        Security, working in collaboration with the UK Health Security Agency, University College
-        London, and the Met Office to inform UK and global public health policy.
+        The Climate and Health Group at the London School of Hygiene & Tropical Medicine (LSHTM) is an interdisciplinary group interested in the health impacts associated with climate variability and climate change. The group is at the forefront of evidence generation on the health impacts associated with key climate hazards, the actions needed to protect UK public health and the opportunities for improving global health of policies aimed at reducing greenhouse gas emissions. The group hosts the NIHR Health Protection Research Unit on Climate Change and Health Security in partnership with the UK Health Security Agency, University College London and the Met Office.
       </p>
       <a href="https://www.lshtm.ac.uk/research/centres-projects-groups/climate-health-group" target="_blank" rel="noopener" class="modal-link">
         Visit the Climate and Health Group &#x2197;
@@ -251,6 +294,8 @@
   <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/event.js"></script>
+  <script src="js/storyboards.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/globe.js"></script>
 

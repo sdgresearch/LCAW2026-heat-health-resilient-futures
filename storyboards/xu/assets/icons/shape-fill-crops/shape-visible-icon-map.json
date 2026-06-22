@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "poster-template_s01_visible_01",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-01.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 1,
+    "shapeName": "矩形 36",
+    "presetGeometry": "rect",
+    "originalMedia": "image7.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -30557,
+      "t": -27770,
+      "r": -279275,
+      "b": -145417
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      115,
+      104,
+      489,
+      479
+    ],
+    "trimmedSize": [
+      307,
+      323
+    ],
+    "outputSize": [
+      307,
+      323
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "5250532",
+        "y": "18605301"
+      },
+      "ext": {
+        "cx": "2712462",
+        "cy": "2712462"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_02",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-02.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 2,
+    "shapeName": "矩形 37",
+    "presetGeometry": "rect",
+    "originalMedia": "image7.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -283320,
+      "t": -27770,
+      "r": -26512,
+      "b": -145417
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      1062,
+      104,
+      1437,
+      479
+    ],
+    "trimmedSize": [
+      335,
+      365
+    ],
+    "outputSize": [
+      335,
+      365
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "15648847",
+        "y": "18585135"
+      },
+      "ext": {
+        "cx": "2804438",
+        "cy": "2804438"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_03",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-03.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 3,
+    "shapeName": "矩形 38",
+    "presetGeometry": "rect",
+    "originalMedia": "image7.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -154916,
+      "t": -136593,
+      "r": -154916,
+      "b": -36593
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      581,
+      512,
+      955,
+      887
+    ],
+    "trimmedSize": [
+      325,
+      373
+    ],
+    "outputSize": [
+      325,
+      373
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "25792868",
+        "y": "18627142"
+      },
+      "ext": {
+        "cx": "2881370",
+        "cy": "2881370"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_04",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-04.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 4,
+    "shapeName": "矩形 39",
+    "presetGeometry": "rect",
+    "originalMedia": "image7.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -197437,
+      "t": -136593,
+      "r": -9937,
+      "b": -36593
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      987,
+      512,
+      1486,
+      887
+    ],
+    "trimmedSize": [
+      436,
+      372
+    ],
+    "outputSize": [
+      436,
+      372
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "20054029",
+        "y": "18281218"
+      },
+      "ext": {
+        "cx": "4110177",
+        "cy": "3082632"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_05",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-05.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 5,
+    "shapeName": "矩形 57",
+    "presetGeometry": "rect",
+    "originalMedia": "image10.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -17779,
+      "t": -131520,
+      "r": -254142,
+      "b": -106520
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      73,
+      398,
+      486,
+      701
+    ],
+    "trimmedSize": [
+      400,
+      303
+    ],
+    "outputSize": [
+      400,
+      303
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "5167189",
+        "y": "13079581"
+      },
+      "ext": {
+        "cx": "3296358",
+        "cy": "2397351"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_06",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-06.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 6,
+    "shapeName": "矩形 58",
+    "presetGeometry": "rect",
+    "originalMedia": "image10.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -138396,
+      "t": -131520,
+      "r": -216174,
+      "b": -106520
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      468,
+      398,
+      806,
+      701
+    ],
+    "trimmedSize": [
+      308,
+      301
+    ],
+    "outputSize": [
+      308,
+      301
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "12141072",
+        "y": "12669796"
+      },
+      "ext": {
+        "cx": "3155696",
+        "cy": "2805063"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_07",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-07.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 7,
+    "shapeName": "矩形 59",
+    "presetGeometry": "rect",
+    "originalMedia": "image10.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -185961,
+      "t": -131520,
+      "r": -85961,
+      "b": -106520
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      768,
+      398,
+      1181,
+      701
+    ],
+    "trimmedSize": [
+      400,
+      303
+    ],
+    "outputSize": [
+      400,
+      303
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "18182147",
+        "y": "12577529"
+      },
+      "ext": {
+        "cx": "3960000",
+        "cy": "2880000"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_08",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-08.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 8,
+    "shapeName": "矩形 60",
+    "presetGeometry": "rect",
+    "originalMedia": "image10.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -304557,
+      "t": -131520,
+      "r": -4557,
+      "b": -106520
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      1143,
+      398,
+      1519,
+      701
+    ],
+    "trimmedSize": [
+      337,
+      297
+    ],
+    "outputSize": [
+      337,
+      297
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "25238597",
+        "y": "12930816"
+      },
+      "ext": {
+        "cx": "3124867",
+        "cy": "2499894"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_09",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-09.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 9,
+    "shapeName": "矩形 83",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -9589,
+      "t": -128744,
+      "r": -397089,
+      "b": -157316
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      29,
+      341,
+      332,
+      607
+    ],
+    "trimmedSize": [
+      245,
+      265
+    ],
+    "outputSize": [
+      245,
+      265
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "5048908",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "2193701",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_10",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-10.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 10,
+    "shapeName": "矩形 84",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -128750,
+      "t": -124275,
+      "r": -388750,
+      "b": -161785
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      320,
+      330,
+      569,
+      595
+    ],
+    "trimmedSize": [
+      194,
+      257
+    ],
+    "outputSize": [
+      194,
+      257
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "9584734",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "1800000",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_11",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-11.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 11,
+    "shapeName": "矩形 85",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -180364,
+      "t": -128744,
+      "r": -226314,
+      "b": -157316
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      547,
+      341,
+      850,
+      607
+    ],
+    "trimmedSize": [
+      284,
+      226
+    ],
+    "outputSize": [
+      284,
+      226
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "13669215",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "2193701",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_12",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-12.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 12,
+    "shapeName": "矩形 86",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -268981,
+      "t": -128744,
+      "r": -137697,
+      "b": -157316
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      815,
+      341,
+      1119,
+      607
+    ],
+    "trimmedSize": [
+      262,
+      261
+    ],
+    "outputSize": [
+      262,
+      261
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "17891821",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "2193701",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_13",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-13.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 13,
+    "shapeName": "矩形 87",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -548438,
+      "t": -128744,
+      "r": -123438,
+      "b": -157316
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      1091,
+      341,
+      1290,
+      607
+    ],
+    "trimmedSize": [
+      199,
+      261
+    ],
+    "outputSize": [
+      199,
+      261
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "22675775",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "1440000",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_14",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-14.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 14,
+    "shapeName": "矩形 88",
+    "presetGeometry": "rect",
+    "originalMedia": "image12.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -507814,
+      "t": -128744,
+      "r": -9686,
+      "b": -157316
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      1263,
+      341,
+      1512,
+      607
+    ],
+    "trimmedSize": [
+      216,
+      196
+    ],
+    "outputSize": [
+      216,
+      196
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "26661655",
+        "y": "30176865"
+      },
+      "ext": {
+        "cx": "1800000",
+        "cy": "1919489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_15",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-15.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 15,
+    "shapeName": "矩形 114",
+    "presetGeometry": "rect",
+    "originalMedia": "image14.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -29539,
+      "t": -45679,
+      "r": -379539,
+      "b": -195679
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      89,
+      137,
+      391,
+      437
+    ],
+    "trimmedSize": [
+      268,
+      284
+    ],
+    "outputSize": [
+      268,
+      284
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "8485018",
+        "y": "24187656"
+      },
+      "ext": {
+        "cx": "2334543",
+        "cy": "2334543"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_16",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-16.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 16,
+    "shapeName": "矩形 115",
+    "presetGeometry": "rect",
+    "originalMedia": "image14.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -304539,
+      "t": -45679,
+      "r": -104539,
+      "b": -195679
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      919,
+      137,
+      1221,
+      437
+    ],
+    "trimmedSize": [
+      293,
+      299
+    ],
+    "outputSize": [
+      293,
+      299
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "12032021",
+        "y": "24022244"
+      },
+      "ext": {
+        "cx": "2500675",
+        "cy": "2500675"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_17",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-17.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 17,
+    "shapeName": "矩形 116",
+    "presetGeometry": "rect",
+    "originalMedia": "image14.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -174539,
+      "t": -170679,
+      "r": -234539,
+      "b": -70679
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      527,
+      512,
+      828,
+      812
+    ],
+    "trimmedSize": [
+      229,
+      275
+    ],
+    "outputSize": [
+      229,
+      275
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "15723777",
+        "y": "24135327"
+      },
+      "ext": {
+        "cx": "2363709",
+        "cy": "2363709"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_18",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-18.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 18,
+    "shapeName": "矩形 117",
+    "presetGeometry": "rect",
+    "originalMedia": "image15.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -63631,
+      "t": -80211,
+      "r": -243631,
+      "b": -92875
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      240,
+      301,
+      617,
+      676
+    ],
+    "trimmedSize": [
+      291,
+      369
+    ],
+    "outputSize": [
+      291,
+      369
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "19530203",
+        "y": "24541070"
+      },
+      "ext": {
+        "cx": "2092489",
+        "cy": "2092489"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_19",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-19.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 19,
+    "shapeName": "矩形 118",
+    "presetGeometry": "rect",
+    "originalMedia": "image14.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -408289,
+      "t": -51929,
+      "r": -789,
+      "b": -189429
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      1232,
+      156,
+      1534,
+      456
+    ],
+    "trimmedSize": [
+      103,
+      228
+    ],
+    "outputSize": [
+      103,
+      228
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "22990222",
+        "y": "24259792"
+      },
+      "ext": {
+        "cx": "2285273",
+        "cy": "2285273"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_20",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-20.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 20,
+    "shapeName": "矩形 119",
+    "presetGeometry": "rect",
+    "originalMedia": "image14.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -29539,
+      "t": -176929,
+      "r": -379539,
+      "b": -64429
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      89,
+      531,
+      391,
+      831
+    ],
+    "trimmedSize": [
+      244,
+      275
+    ],
+    "outputSize": [
+      244,
+      275
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "4942358",
+        "y": "24314230"
+      },
+      "ext": {
+        "cx": "2145134",
+        "cy": "2145134"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "poster-template_s01_visible_21",
+    "file": "assets/icons/shape-fill-crops/poster-template-slide-01-shape-visible-21.png",
+    "source": "Poster Template_CREATE Symposium 2026-new.pptx",
+    "slide": 1,
+    "shapeIndex": 21,
+    "shapeName": "矩形 120",
+    "presetGeometry": "rect",
+    "originalMedia": "image16.png",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "fillRectPercent": {
+      "l": -13217,
+      "t": 1830,
+      "r": -13217,
+      "b": 1830
+    },
+    "visibleCropPixelsWithinSrcRect": [
+      161,
+      0,
+      1375,
+      1024
+    ],
+    "trimmedSize": [
+      1153,
+      1022
+    ],
+    "outputSize": [
+      1024,
+      908
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "26469684",
+        "y": "24340686"
+      },
+      "ext": {
+        "cx": "2699570",
+        "cy": "2375622"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "viva_s11_visible_01",
+    "file": "assets/icons/shape-fill-crops/viva-slide-11-shape-visible-01.png",
+    "source": "presentation-20250627-viva.pptx",
+    "slide": 11,
+    "shapeIndex": 1,
+    "shapeName": "椭圆 386",
+    "presetGeometry": "ellipse",
+    "originalMedia": "image34.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "fillRectPercent": {},
+    "visibleCropPixelsWithinSrcRect": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "trimmedSize": [
+      897,
+      779
+    ],
+    "outputSize": [
+      897,
+      779
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "9405100",
+        "y": "1667878"
+      },
+      "ext": {
+        "cx": "1011277",
+        "cy": "1011277"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "viva_s11_visible_02",
+    "file": "assets/icons/shape-fill-crops/viva-slide-11-shape-visible-02.png",
+    "source": "presentation-20250627-viva.pptx",
+    "slide": 11,
+    "shapeIndex": 2,
+    "shapeName": "椭圆 385",
+    "presetGeometry": "ellipse",
+    "originalMedia": "image35.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "fillRectPercent": {},
+    "visibleCropPixelsWithinSrcRect": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "trimmedSize": [
+      900,
+      767
+    ],
+    "outputSize": [
+      900,
+      767
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "10556097",
+        "y": "2799932"
+      },
+      "ext": {
+        "cx": "1011277",
+        "cy": "1011277"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "viva_s11_visible_03",
+    "file": "assets/icons/shape-fill-crops/viva-slide-11-shape-visible-03.png",
+    "source": "presentation-20250627-viva.pptx",
+    "slide": 11,
+    "shapeIndex": 3,
+    "shapeName": "椭圆 384",
+    "presetGeometry": "ellipse",
+    "originalMedia": "image36.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "fillRectPercent": {},
+    "visibleCropPixelsWithinSrcRect": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "trimmedSize": [
+      894,
+      789
+    ],
+    "outputSize": [
+      894,
+      789
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "10556097",
+        "y": "4672720"
+      },
+      "ext": {
+        "cx": "1011277",
+        "cy": "1011277"
+      }
+    },
+    "suggestedUse": ""
+  },
+  {
+    "id": "viva_s11_visible_04",
+    "file": "assets/icons/shape-fill-crops/viva-slide-11-shape-visible-04.png",
+    "source": "presentation-20250627-viva.pptx",
+    "slide": 11,
+    "shapeIndex": 4,
+    "shapeName": "椭圆 380",
+    "presetGeometry": "ellipse",
+    "originalMedia": "image37.png",
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "srcRectPercent": {},
+    "srcRectPixels": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "fillRectPercent": {},
+    "visibleCropPixelsWithinSrcRect": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "trimmedSize": [
+      856,
+      799
+    ],
+    "outputSize": [
+      856,
+      799
+    ],
+    "displayEmu": {
+      "off": {
+        "x": "9405100",
+        "y": "5801656"
+      },
+      "ext": {
+        "cx": "1011277",
+        "cy": "1011277"
+      }
+    },
+    "suggestedUse": ""
+  }
+]

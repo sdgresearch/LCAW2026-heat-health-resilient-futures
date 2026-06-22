@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Bears the Heat? — Unequal Urban Heat Exposure in Nairobi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="kenya_geo.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-nav" id="siteNav">
+        <a class="nav-brand" href="#section-0">Who Bears the Heat?</a>
+        <nav class="nav-links" aria-label="Page sections">
+            <a href="#section-africa" data-section="section-africa">Study Area</a>
+            <a href="#section-1" data-section="section-1">Growth</a>
+            <a href="#section-2" data-section="section-2">Warming</a>
+            <a href="#section-3" data-section="section-3">Method</a>
+            <a href="#section-4" data-section="section-4">Numbers</a>
+            <a href="#section-5" data-section="section-5">Exposure</a>
+            <a href="#section-6" data-section="section-6">History</a>
+            <a href="#section-map" data-section="section-map">Map</a>
+            <a href="#section-7" data-section="section-7">Takeaway</a>
+            <a href="#section-8" data-section="section-8">Credits</a>
+        </nav>
+    </header>
+    <main class="story-container">
+        <section class="scroll-section" id="section-0" data-theme="title">
+            <div class="content-wrapper">
+                <h1 class="animate-text" style="font-size: 4rem; line-height: 1.1;">Who Bears the Heat?</h1>
+                <p class="animate-text delay-1 title-subtitle">Mapping unequal urban heat exposure across Nairobi's wards <br>and the 1948 planning legacy still written into the city's thermal landscape.</p>
+            </div>
+            <div class="background-element title-bg has-cover" style="background-image: linear-gradient(var(--title-overlay-from), var(--title-overlay-to)), url('cover.png'); background-size: cover; background-position: center;"></div>
+            <a class="cover-credit" href="https://unequalscenes.com/nairobi" target="_blank" rel="noopener">Image: "Inequality" A Blueprint for Better Business, Mar. 2017, www.blueprintforbusiness.org/wp-content/uploads/2017/03/Inequality-014.jpg.</a>
+        </section>
+        <section class="scroll-section" id="section-africa" data-theme="data">
+            <div class="map-section-inner">
+                <h2 class="animate-text">The Study Area</h2>
+                <p class="animate-text delay-1 map-lede">Nairobi is the capital city of Kenya, a vital commercial and economic hub for East Africa. With a population of 5.8 million and annual population growthrate of 4.07% as of 2026, the city is a primary strategic gateway to East and Central Africa. Drag to pan, use the controls to zoom.</p>
+                <div class="map-frame-wrap animate-text delay-2">
+                    <div id="africaMap" class="map-frame"></div>
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+
+        <section class="scroll-section" id="section-1" data-theme="warm">
+            <div class="content-wrapper split-layout">
+                <div class="text-content">
+                    <h2 class="animate-text">A City Doubling in Size</h2>
+                    <p class="animate-text delay-1">Over the last five decades Nairobi's built-up area has more than doubled from roughly 48 km² in 1975 to 103.35 km² in 2025. Much of that growth has been unregulated, producing extensive informal urbanization.<br><br>By 2050, the city is projected to be home to 14 million people.</p>
+                    
+                </div>
+                <div class="image-content animate-text delay-3">
+                    <img src="figure8.png" alt="Map of Nairobi's built-up area in 1975 (cyan) versus 2025 (red)" class="content-image">
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-2" data-theme="warm">
+            <div class="content-wrapper split-layout reverse">
+                <div class="image-content animate-text delay-1">
+                    <img src="figure6.png" alt="Nairobi monthly UTCI 1982–2024 with Theil-Sen warming trend" class="content-plot">
+                </div>
+                <div class="text-content">
+                    <h2 class="animate-text">…and Getting Hotter Every Year</h2>
+                    <p class="animate-text delay-2">Four decades of climate records show Nairobi warming at +0.0422 °C per year (95% CI: +0.0344 to +0.0500) — a total of +1.82 °C over the record, with heatwaves now more frequent and intense.<br><br>But that heat is not shared equally. The question is: who bears it?</p>
+                    
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-3" data-theme="neutral">
+            <div class="content-wrapper split-layout">
+                <div class="text-content">
+                    <h2 class="animate-text">Mapping the Heat Island</h2>
+                    <p class="animate-text delay-1">Using open geospatial datasets, we mapped satellite-derived urban heat island intensity across Nairobi's built-up area and classified it into five intensity classes.<br><br>Overlaying gridded population data lets us count exactly how many people live under each level of heat ward by ward.</p>
+                    
+                </div>
+                <div class="image-content animate-text delay-3">
+                    <img src="figure3.png" alt="Urban heat island intensity classes across Nairobi's built-up area, Landsat 8, 2024" class="content-image">
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-4" data-theme="tech">
+            <div class="content-wrapper impact-section">
+                <h2 class="animate-text">The Burden in Numbers</h2>
+                <p class="animate-text delay-1" style="max-width: 700px; margin-left: auto; margin-right: auto;"></p>
+                <div class="stats-grid animate-text delay-2">
+                    <div class="stat-item extreme">
+                        <span class="stat-number">401,603</span>
+                        <span class="stat-label">people exposed to very strong or extreme urban heat island effects</span>
+                    </div>
+                    <div class="stat-item caution">
+                        <span class="stat-number">~10%</span>
+                        <span class="stat-label">of Nairobi's population living under that heat burden</span>
+                    </div>
+                    <div class="stat-item warm">
+                        <span class="stat-number">+10.7°C</span>
+                        <span class="stat-label">Urban heat island intensity endured by highly exposed residents</span>
+                    </div>
+                    <div class="stat-item warm">
+                        <span class="stat-number">0.647</span>
+                        <span class="stat-label">Gini coefficient of high-heat exposure across Nairobi's wards</span>
+                    </div>
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-5" data-theme="data">
+            <div class="content-wrapper split-layout">
+                <div class="text-content">
+                    <h2 class="animate-text">Where Density Meets Heat</h2>
+                    <p class="animate-text delay-1">This bivariate map shows where high population density coincides with high heat exposure the darker the red-brown, the more people packed into the hottest parts of the city.<br><br>The pattern is unmistakable: extreme heat concentrates in informal settlements, where the urban poor live.</p>
+                    <div class="key-insight animate-text delay-2"><strong>Key Insight:</strong> The most exposed wards —: Dandora Area Three (over 70% of residents exposed), Viwandani, Kariobangi South, Kwa Njenga — are dense, low-income neighbourhoods in the city's east.</div>
+                </div>
+                <div class="image-content animate-text delay-3">
+                    <img src="figure2.png" alt="Bivariate choropleth of population density versus heat exposure across Nairobi wards" class="content-image">
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-6" data-theme="alert">
+            <div class="content-wrapper split-layout reverse">
+                <div class="image-content animate-text delay-1">
+                    <img src="figure11.png" alt="LISA clusters of ward heat exposure showing significant hotspots and coldspots" class="content-image">
+                </div>
+                <div class="text-content">
+                    <h2 class="animate-text">A Pattern Drawn in 1948</h2>
+                    <p class="animate-text delay-2">Heat exposure clusters are statistically significant: hotspots (red) crowd the industrial east while coldspots (blue) trace the leafy, low-density west.<br><br>Set this map beside Thornton White's 1948 "masterplan for a colonial capital" and the divide aligns. Nairobi's legacy of segregated planning strongly correlates with present-day heat distribution — and a Lorenz curve confirms a very small fraction of the population bears a massively disproportionate share of the heat burden.</p>
+                    
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-map" data-theme="data">
+            <div class="map-section-inner">
+                <h2 class="animate-text">Explore the Wards Yourself</h2>
+                <p class="animate-text delay-1 map-lede">An interactive map of heat exposure across Nairobi's 85 wards — zoom, pan, and click a ward to see its exposure.</p>
+                <div class="map-frame-wrap animate-text delay-2">
+                    <iframe class="map-frame" src="ward_heat_exposure_map.html" title="Interactive ward heat exposure map of Nairobi" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+
+        <section class="scroll-section" id="section-7" data-theme="insight">
+            <div class="content-wrapper">
+                <h2 class="animate-text">Heat Is an Equity Issue</h2>
+                <p class="animate-text delay-1">In Nairobi, urban heat is not merely a physical phenomenon but a profound social one; inequality is quite literally printed in different hues across the city's thermal landscape. Beyond the usual suspects of lost greenery, building density and reduced sky-view factors, historical planning injustice shapes who swelters today.</p>
+                <div class="call-to-action animate-text delay-2">
+                    <p>Addressing this growing public-health threat starts with accurately identifying the most vulnerable communities. Nairobi's informal settlements should be the priority targets for heat intervention, before climate change and rapid urbanization push exposure even higher.</p>
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+        <section class="scroll-section" id="section-8" data-theme="footer">
+            <div class="content-wrapper">
+                <h2 class="animate-text">Research & Presentation</h2>
+                <div class="links-container animate-text delay-1">
+                    <p><strong>Authors:</strong> Kumary, S., Zuniga-Gonzalez, A., Pan, J., Li, H. &amp; Bardhan, R. (2026).</p>
+                    <p>Sustainable Design Group, Department of Architecture, University of Cambridge<br>Presented at London Climate Action Week 2026 &nbsp;·&nbsp; skk53@cam.ac.uk</p>
+                    <p><strong>Paper:</strong> Kumary, S., Zuniga-Gonzalez, A., Pan, J., Li, H. &amp; Bardhan, R. (2026). Rethinking Urban Morphology for Climate Action: Lessons from Nairobi&rsquo;s Liberalised Growth. American Association of Geographers Annual Meeting, Session: African Urban and Regional Planning, 17&ndash;21 March 2026.</p>
+                    <p><strong>Funding:</strong> Cambridge Africa Changemakers Scholarship &amp; Cambridge Trust</p>
+                    <a href="https://www.behance.net/Adenkumary" class="btn-link" target="_blank">Read Original Publication</a>
+                </div>
+            </div>
+            <div class="background-element"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

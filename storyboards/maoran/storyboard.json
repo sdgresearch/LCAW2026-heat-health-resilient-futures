@@ -1,0 +1,93 @@
+{
+  "page_title": "Homes on Ice and Fire — Double Thermal Jeopardy of UK Homes",
+  "doi_url": "https://www.repository.cam.ac.uk/",
+  "sections": [
+    {
+      "slot": "title",
+      "layout": "title",
+      "theme": "title",
+      "heading": "Homes on Ice and Fire",
+      "subtitle": "Unveiling the double thermal jeopardy of UK homes — the compounded condition in which the same fabric that traps cold in winter also traps heat in summer. An AI-driven investigation across Cambridge, Glasgow, Edinburgh and London.",
+      "cover_image": "cover.png"
+    },
+    {
+      "slot": "hook",
+      "layout": "quote",
+      "theme": "neutral",
+      "heading": "The next decade is decisive",
+      "quote": "The same fabric conditions that obstruct wintertime decarbonisation — poor insulation, hard-to-retrofit construction, restricted ventilation — also heighten a home's susceptibility to dangerous overheating in summer.",
+      "attribution": "Buildings account for ~40% of energy use in developed countries; around half of UK dwellings are already at risk of overheating, with over 90% projected to be exposed as temperatures rise."
+    },
+    {
+      "slot": "problem",
+      "layout": "split_no_image",
+      "theme": "alert",
+      "heading": "Two crises, one structure — and it falls unevenly",
+      "body": "Winter cold stress and summer overheating have long been treated as separate problems, each with its own metrics and policy instruments. But they arise from the same hard-to-retrofit fabric, the same socio-economic constraint, the same limited capacity to adapt. For some households, thermal disadvantage is not seasonal but year-round.",
+      "definition": "Thermal minorities — households whose everyday thermal experiences systematically fall outside normative assumptions of comfort and safety, across both the heating and the cooling season.",
+      "insight": "Understanding how double thermal jeopardy manifests in practice, and for whom, is essential for designing equitable responses to the twin crises of energy poverty and climate-driven heat stress."
+    },
+    {
+      "slot": "method",
+      "layout": "stacked",
+      "theme": "tech",
+      "heading": "A data-driven framework in four modules",
+      "body": "The thesis treats thermal vulnerability as a pattern-recognition problem grounded in observational data. Four interrelated modules integrate deep learning, high-resolution indoor sensing, and large-scale smart-meter analysis: (1) identify hard-to-decarbonise buildings from imagery; (2) map the landscape of heat loss where energy certificates are missing; (3) characterise indoor heat stress during summer heatwaves; (4) reveal the temporal rhythm of thermal risk in household electricity demand.",
+      "figure": "figure2.png",
+      "figure_alt": "Analytical framework linking identification, heat-loss mapping, indoor heat stress, and temporal electricity analysis",
+      "image_class": "content-image"
+    },
+    {
+      "slot": "keyFinding",
+      "layout": "stats_grid",
+      "theme": "data",
+      "heading": "What the evidence shows",
+      "body": "Four headline results, one across each empirical study — together turning double thermal jeopardy from a concept into a measurable condition.",
+      "stat_items": [
+        { "number": "78%", "label": "Hard-to-decarbonise status identified from street-view imagery alone — no intrusive audit required", "accent": "cool" },
+        { "number": ">90%", "label": "Share of UK homes projected to be exposed to overheating risk as the climate warms", "accent": "extreme" },
+        { "number": "0.22°C", "label": "Indoor temperature rise per 1°C of outdoor warming during heatwaves (adjusted R² = 0.33)", "accent": "warm" },
+        { "number": "~66%", "label": "Least-efficient (EPC G) homes stuck in an 'Always-On' demand rhythm, vs under 43% at EPC A–B", "accent": "caution" }
+      ]
+    },
+    {
+      "slot": "dataNarrative",
+      "layout": "stacked",
+      "theme": "warm",
+      "heading": "The curse of good condition",
+      "body": "Indoor monitoring across 39 Southwark households over summer 2023 showed residential overheating far exceeding what official outdoor records suggested. Most indoor data points during heatwave periods fell outside the ASHRAE Standard 55 comfort zone — against 85% within comfort during non-heatwave days.",
+      "figure": "figure24.png",
+      "figure_alt": "Hourly indoor/outdoor temperature difference by household during a September heatwave",
+      "image_class": "content-plot",
+      "insight": "Paradoxically, better-maintained dwellings in less-deprived neighbourhoods ran hotter indoors. The very properties that improve winter performance — high airtightness, good insulation — also trap summer heat. Energy-efficiency upgrading alone cannot guarantee year-round thermal wellbeing."
+    },
+    {
+      "slot": "secondaryFinding",
+      "layout": "split_reverse",
+      "theme": "data",
+      "heading": "When deprivation maps don't predict efficiency",
+      "body": "Extending energy classification to dwellings without certificates, then overlaying neighbourhood deprivation, revealed a counterintuitive result in Scottish cities: deprived neighbourhoods in Glasgow and Edinburgh contained a higher proportion of energy-efficient dwellings — the legacy of decades of targeted retrofit programmes.",
+      "figure": "figure17.png",
+      "figure_alt": "Bivariate map of neighbourhood deprivation (SIMD) versus predicted energy performance in a Scottish city",
+      "image_class": "content-plot",
+      "insight": "Coarse socio-spatial proxies can point retrofit investment in the wrong direction. Targeting thermal vulnerability needs property-level evidence, not neighbourhood-level assumptions."
+    },
+    {
+      "slot": "insight",
+      "layout": "insight",
+      "theme": "insight",
+      "heading": "Double thermal jeopardy is not an abstraction",
+      "body": "It is present in the rooftops and wall types of hard-to-retrofit Cambridge terraces, in the spatial patterns of Glasgow and Edinburgh neighbourhoods, in the prolonged heat accumulation measured in Southwark bedrooms on August nights, and in the structurally persistent electricity rhythms of England's least-efficient dwellings.",
+      "cta": "Making this condition visible at scale is a necessary precondition for addressing it — and addressing it equitably is one of the most urgent tasks facing UK housing."
+    },
+    {
+      "slot": "credits",
+      "layout": "credits",
+      "theme": "footer",
+      "heading": "About this work",
+      "authors": "Maoran Sun",
+      "affiliations": "Department of Architecture, University of Cambridge · Girton College · PhD dissertation, February 2026",
+      "caption": "Case studies: Cambridge · Glasgow · Edinburgh · London"
+    }
+  ]
+}

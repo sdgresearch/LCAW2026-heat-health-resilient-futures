@@ -2,12 +2,9 @@ window.SDG = window.SDG || {};
 
 (function () {
   var tabBtns    = document.querySelectorAll('.tab-btn');
-  var panelMap   = document.getElementById('tab-map');
-  var panelProjs = document.getElementById('tab-projects');
+  var panels     = document.querySelectorAll('.tab-panel');
   var grid       = document.getElementById('projects-grid');
   var rendered   = false;
-
-  document.body.classList.add('tab-map-active');
 
   tabBtns.forEach(function (btn) {
     btn.addEventListener('click', function () { switchTab(btn.dataset.tab); });
@@ -27,8 +24,9 @@ window.SDG = window.SDG || {};
       btn.tabIndex = active ? 0 : -1;
     });
 
-    panelMap.hidden   = tabName !== 'map';
-    panelProjs.hidden = tabName !== 'projects';
+    panels.forEach(function (panel) {
+      panel.hidden = panel.id !== 'tab-' + tabName;
+    });
 
     if (tabName === 'map') {
       document.body.classList.add('tab-map-active');
@@ -46,6 +44,10 @@ window.SDG = window.SDG || {};
       } else {
         grid.innerHTML = '<p class="grid-loading">Loading projects…</p>';
       }
+    }
+
+    if (tabName === 'storyboards' && SDG.renderStoryboards) {
+      SDG.renderStoryboards();
     }
   }
 

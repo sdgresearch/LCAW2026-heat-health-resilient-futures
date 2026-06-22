@@ -12,8 +12,7 @@ window.SDG = window.SDG || {};
     .height(container.offsetHeight || window.innerHeight)
     (container);
 
-  globe.controls().autoRotate      = true;
-  globe.controls().autoRotateSpeed = 0.35;
+  globe.controls().autoRotate      = false;
   globe.controls().enableDamping   = true;
   globe.controls().dampingFactor   = 0.08;
   globe.controls().minDistance     = 110;
@@ -37,7 +36,10 @@ window.SDG = window.SDG || {};
       : { lat: 52.2053, lng:  0.1218 };  /* Cambridge */
   }
 
-  SDG.loadProjects('data/London Climate Week Showcase(1-6).csv').then(function (projects) {
+  SDG.loadProjects([
+    'data/London Climate Week Showcase(1-6).csv',
+    'data/LCAW-LSHTM projects.csv'
+  ]).then(function (projects) {
     SDG.projects = projects;
 
     globe
@@ -48,9 +50,9 @@ window.SDG = window.SDG || {};
         var base = univRingBase(d);
         return function (t) { return 'rgba(' + base + ',' + (1 - t) + ')'; };
       })
-      .ringMaxRadius(2.5)
-      .ringPropagationSpeed(1.8)
-      .ringRepeatPeriod(900)
+      .ringMaxRadius(0.35)
+      .ringPropagationSpeed(0.6)
+      .ringRepeatPeriod(1200)
       .ringAltitude(0.002);
 
     globe
@@ -58,7 +60,7 @@ window.SDG = window.SDG || {};
       .pointLat(function (d) { return d.lat; })
       .pointLng(function (d) { return d.lng; })
       .pointColor(function (d) { return univColor(d); })
-      .pointRadius(0.4)
+      .pointRadius(0.15)
       .pointAltitude(0.01)
       .pointResolution(12)
       .pointLabel(function (d) {
@@ -67,7 +69,9 @@ window.SDG = window.SDG || {};
       })
       .onPointClick(function (point) {
         globe.controls().autoRotate = false;
-        globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: 1.6 }, 900);
+        /* recenter on the point but keep the current zoom — never zoom out */
+        var alt = globe.pointOfView().altitude;
+        globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: Math.min(alt, 1.6) }, 900);
         setTimeout(function () { SDG.ui.openPanel(point); }, 700);
       })
       .onPointHover(function (point) {
