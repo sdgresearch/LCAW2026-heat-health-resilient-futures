@@ -62,7 +62,7 @@ SDG.eventData = {
       photo: 'assets/Panelists/Vishwas-Chitale.jpg'
     },
     {
-      name: 'Axum Teffera',
+      name: 'Axum Teferra',
       title: 'Senior Associate Director, Clean Cooling',
       affiliation: 'ClimateWorks Foundation',
       photo: 'assets/Panelists/Axum Teffera.jpeg'
@@ -91,8 +91,8 @@ SDG.eventData = {
     },
     {
       name: 'Dr Kai Wan',
-      title: 'Research Fellow, NIHR HPRU in Climate Change and Health Security',
-      affiliation: 'LSHTM',
+      title: 'Research Fellow',
+      affiliation: 'NIHR HPRU in Climate Change and Health Security, LSHTM',
       talk: 'Heat and mental and behavioural health in the UK',
       photo: 'assets/ECR speakers/LSHTM-Kai Wan.jpg'
     },

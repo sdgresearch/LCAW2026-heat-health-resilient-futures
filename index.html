@@ -73,6 +73,15 @@
               tabindex="-1">
         Storyboards
       </button>
+      <button class="tab-btn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-survey"
+              id="tabBtn-survey"
+              data-tab="survey"
+              tabindex="-1">
+        Survey
+      </button>
     </div>
 
     <!-- Event Tab Panel -->
@@ -95,7 +104,7 @@
             <span class="meta-icon" aria-hidden="true">&#x1F551;</span>
             <div class="meta-text">
               <span class="meta-label">Time</span>
-              <span class="meta-value">2:00 &ndash; 5:00 PM &nbsp;&middot;&nbsp; Doors 1:30 PM</span>
+              <span class="meta-value">2:00 &ndash; 6:00 PM &nbsp;&middot;&nbsp; Doors 1:30 PM</span>
             </div>
           </div>
           <div class="event-meta-item">
@@ -139,6 +148,13 @@
               <div class="agenda-body">
                 <h3 class="agenda-title">Panel Discussion: Heat and Health Action</h3>
                 <p class="agenda-detail">A discussion on adaptation opportunities across cities, buildings and communities globally. Featuring Professor Ronita Bardhan.</p>
+              </div>
+            </li>
+            <li class="agenda-item">
+              <span class="agenda-time">4:40 &ndash; 6:00 PM</span>
+              <div class="agenda-body">
+                <h3 class="agenda-title">Networking</h3>
+                <p class="agenda-detail">Networking with drinks and refreshments.</p>
               </div>
             </li>
           </ol>
@@ -187,6 +203,15 @@
         </div>
         <iframe id="storyboard-frame" class="storyboard-frame"
                 title="Project storyboard" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Survey Tab Panel -->
+    <div id="tab-survey" role="tabpanel" aria-labelledby="tabBtn-survey" class="tab-panel" hidden>
+      <div class="survey-wrap">
+        <iframe id="survey-frame" class="survey-frame"
+                src="https://cambridge.eu.qualtrics.com/jfe/form/SV_4UAbLq5BckialmK"
+                title="Event feedback survey" loading="lazy"></iframe>
       </div>
     </div>
 

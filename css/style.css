@@ -1270,6 +1270,22 @@ button:focus-visible { outline: 2px solid var(--teal); }
 }
 
 /* =========================================================
+   SURVEY TAB
+   ========================================================= */
+.survey-wrap {
+  padding: 1.25rem 1.5rem 2rem;
+}
+
+.survey-frame {
+  width: 100%;
+  height: calc(100vh - var(--header-h) - var(--tabnav-h) - 80px);
+  min-height: 600px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #FFFFFF;
+}
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 @media (max-width: 768px) {
@@ -1284,6 +1300,7 @@ button:focus-visible { outline: 2px solid var(--teal); }
   .tab-nav { padding: 0 1rem; }
   .projects-grid { grid-template-columns: 1fr; padding: 1.25rem 1rem; gap: 1rem; }
   .storyboards-grid { grid-template-columns: 1fr; padding: 1.25rem 1rem; gap: 1rem; }
+  .survey-wrap { padding: 1.25rem 1rem 2rem; }
   .footer-logos { gap: 1.5rem 2rem; }
   .footer-logo { height: 72px; }
 }

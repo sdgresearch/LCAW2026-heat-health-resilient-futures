@@ -37,7 +37,9 @@ function mapRow(row) {
     tags:          tagsRaw ? tagsRaw.split('|').map(function (t) { return t.trim(); }).filter(Boolean) : [],
     team:          teamRaw ? teamRaw.split('|').map(function (t) {
                      return { name: t.trim(), role: '' };
-                   }).filter(function (m) { return m.name; }) : [],
+                   }).filter(function (m) {
+                     return m.name && !/group members/i.test(m.name);
+                   }) : [],
     pi:            pick(row, 'Primary Investigator').trim(),
     linkProject:   linkProject,
     linkPub:       linkPub,

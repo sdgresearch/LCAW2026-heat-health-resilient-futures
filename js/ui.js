@@ -43,6 +43,15 @@ window.SDG = window.SDG || {};
              '</li>';
     }).join('');
 
+    /* PAICE is a cross-institution collaboration, so its members aren't all LSHTM */
+    var teamHeading = /^PAICE/i.test(p.title) ? 'Project members'
+      : (p.university === 'lshtm' ? 'Team (LSHTM Climate and Health Group)' : 'Team');
+
+    var piList = p.pi ? p.pi.split('|').map(function (s) { return s.trim(); }).filter(Boolean) : [];
+    var piHTML = piList.map(function (name) {
+      return '<p class="pi-name">' + esc(name) + '</p>';
+    }).join('');
+
     var linksHTML = '';
     if (p.linkProject) {
       linksHTML += '<a href="' + esc(p.linkProject) + '" target="_blank" rel="noopener" ' +
@@ -72,14 +81,16 @@ window.SDG = window.SDG || {};
       '<h2 class="project-title">' + esc(p.title) + '</h2>' +
       (tagsHTML ? '<div class="project-tags" aria-label="Tags">' + tagsHTML + '</div>' : '') +
       '<p class="project-description">' + esc(p.description) + '</p>' +
-      (p.pi ?
+      (piHTML ?
         '<section class="pi-section">' +
-          '<h3 class="section-heading">Primary Investigator</h3>' +
-          '<p class="pi-name">' + esc(p.pi) + '</p>' +
+          '<h3 class="section-heading">' +
+            (piList.length > 1 ? 'Principal Investigators' : 'Principal Investigator') +
+          '</h3>' +
+          piHTML +
         '</section>' : '') +
       (teamHTML ?
         '<section class="team-section">' +
-          '<h3 class="section-heading">Team</h3>' +
+          '<h3 class="section-heading">' + teamHeading + '</h3>' +
           '<ul class="team-list">' + teamHTML + '</ul>' +
         '</section>' : '') +
       (linksHTML ? '<div class="card-links">' + linksHTML + '</div>' : '') +
