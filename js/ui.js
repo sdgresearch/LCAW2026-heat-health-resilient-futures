@@ -61,6 +61,10 @@ window.SDG = window.SDG || {};
       linksHTML += '<a href="' + esc(p.linkPub) + '" target="_blank" rel="noopener" ' +
                    'class="card-link-btn secondary">Publication &#x2197;</a>';
     }
+    if (p.storyboard) {
+      linksHTML += '<a href="' + esc(p.storyboard) + '" target="_blank" rel="noopener" ' +
+                   'class="card-link-btn storyboard">View Storyboard &#x2197;</a>';
+    }
 
     var statusClass = p.status === 'active' ? 'badge-active' : 'badge-completed';
     var statusText  = p.status === 'active' ? 'Active' : 'Completed';

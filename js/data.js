@@ -28,8 +28,14 @@ function mapRow(row) {
   var uni = (pick(row, 'University') || 'cambridge').trim().toLowerCase();
   uni = uni.indexOf('lshtm') !== -1 ? 'lshtm' : 'cambridge';
 
+  /* link this project to its storyboard mini-site, if one exists */
+  var titleTrim = (row['Project Name'] || '').trim();
+  var sb = (window.SDG.storyboards || []).filter(function (s) {
+    return s.project && s.project.trim() === titleTrim;
+  })[0];
+
   return {
-    title:         (row['Project Name'] || '').trim(),
+    title:         titleTrim,
     description:   row['Project Description (max 100 words)'] || '',
     lat:           parseFloat(pick(row, 'Latitude')),
     lng:           parseFloat(pick(row, 'Longitude')),
@@ -43,6 +49,7 @@ function mapRow(row) {
     pi:            pick(row, 'Primary Investigator').trim(),
     linkProject:   linkProject,
     linkPub:       linkPub,
+    storyboard:    sb ? 'storyboards/' + sb.slug + '/index.html' : null,
     linkLabel:     'Project Page',
     status:        'active',
     university:    uni

@@ -9,10 +9,11 @@ window.SDG = window.SDG || {};
    ============================================================ */
 SDG.storyboards = [
   {
-    slug:   'flora_kenya',
-    title:  'Screened Eaves — Cooling Homes and Stopping Malaria in Kenya',
-    author: '',
-    cover:  'storyboards/flora_kenya/cover.png'
+    slug:    'flora_kenya',
+    title:   'Screened Eaves — Cooling Homes and Stopping Malaria in Kenya',
+    author:  '',
+    cover:   'storyboards/flora_kenya/cover.png',
+    project: 'Housing design to reduce Overheating and Malaria risk in indoor Environments'
   },
   {
     slug:   'flora_tree_light',
@@ -21,28 +22,39 @@ SDG.storyboards = [
     cover:  'storyboards/flora_tree_light/cover.png'
   },
   {
-    slug:   'jiayu',
-    title:  'When the House Heats Up — Comfort and Adaptation in Ethiopian Social Housing',
-    author: '',
-    cover:  'storyboards/jiayu/cover.png'
+    slug:    'jiayu',
+    title:   'When the House Heats Up — Comfort and Adaptation in Ethiopian Social Housing',
+    author:  '',
+    cover:   'storyboards/jiayu/cover.png',
+    project: 'HEROES - Health and Energy impacts of Residential Overheating in Ethiopian Slum rehabilitation housing'
   },
   {
-    slug:   'maoran',
-    title:  'Homes on Ice and Fire — Double Thermal Jeopardy of UK Homes',
-    author: '',
-    cover:  'storyboards/maoran/cover.png'
+    slug:    'maoran',
+    title:   'Homes on Ice and Fire — Double Thermal Jeopardy of UK Homes',
+    author:  '',
+    cover:   'storyboards/maoran/cover.png',
+    project: 'Homes on Ice and Fire: Unveiling the double thermal jeopardy of UK homes through an AI-driven approach'
   },
   {
-    slug:   'xu',
-    title:  'Where You Live Shapes Your Health',
-    author: '',
-    cover:  'storyboards/xu/assets/images/reference-extracts/poster-template-slide-01-image-10.jpg'
+    slug:    'xu',
+    title:   'Where You Live Shapes Your Health',
+    author:  '',
+    cover:   'storyboards/xu/assets/images/reference-extracts/poster-template-slide-01-image-10.jpg',
+    project: 'Where You Live Shapes Your Health'
   },
   {
-    slug:   'kumary',
-    title:  'Who Bears the Heat? — Unequal Urban Heat Exposure in Nairobi',
-    author: '',
-    cover:  'storyboards/kumary/cover.png'
+    slug:    'kumary',
+    title:   'Who Bears the Heat? — Unequal Urban Heat Exposure in Nairobi',
+    author:  '',
+    cover:   'storyboards/kumary/cover.png',
+    project: 'Who Bears the Heat? Unequal Urban Heat Exposure in Nairobi City'
+  },
+  {
+    slug:    'andres',
+    title:   'Green Walls of Privilege — Tree Cover and Deprivation Across England',
+    author:  '',
+    cover:   'storyboards/andres/cover.png',
+    project: 'Green Walls of Privilege: How Tree Cover Tracks Deprivation Across England'
   }
 ];
 

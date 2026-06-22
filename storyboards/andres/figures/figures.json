@@ -1,0 +1,146 @@
+[
+  {
+    "file": "figure1.png",
+    "page": 4,
+    "bbox": [
+      124.6,
+      164.53,
+      495.2,
+      380.74
+    ],
+    "label": "Fig. 1",
+    "caption": "Fig. 1: Contrasting spatial distributions of per capita and absolute tree density in England. Choropleth maps illustrate two metrics of tree distribution at the Local Authority District level. (A) Trees per person, a measure of per capita tree availability. (B) Trees per km², a measure of absolute tree density. Map insets depict the Greater London area."
+  },
+  {
+    "file": "figure2.png",
+    "page": 5,
+    "bbox": [
+      100.07,
+      356.53,
+      470.68,
+      541.75
+    ],
+    "label": "Fig. 2",
+    "caption": "Fig. 2: Population meeting each component of the 3-30-300 rule across the regions of England. The chart displays the proportion of the population in each region that fulfil each one of the rules (dark colours) and how close they are to achieving them (light colours): proximity to at least 3 trees in a 25 m-radius from a residence (3, blue), living in a neighbourhood with at least 30% tree canopy cover (30, green), and living within 300 metres of a public park (300, orange)."
+  },
+  {
+    "file": "figure3.png",
+    "page": 7,
+    "bbox": [
+      100.07,
+      73.7,
+      470.68,
+      506.22
+    ],
+    "label": "Fig. 3",
+    "caption": "Fig. 3: Environmental inequality in access to green infrastructure across England. The distribution of the three 3-30-300 rule components at the Lower Layer Super Output Area (LSOA) level is shown, grouped by region. (A) Tree Count at 25 m radius. (B) Canopy cover percentage. (C) Walking distance to the nearest park. (D) Distance to the nearest water source. Dashed horizontal lines indicate the respective guideline thresholds for the 3-30-300. Each boxplot summarises the distribution for LSOAs within a given Index of Multiple Deprivation (IMD) decile, coloured from most deprived (Decile 1, red) to least deprived (Decile 10, blue); y-axes are log-scaled."
+  },
+  {
+    "file": "figure4.png",
+    "page": 8,
+    "bbox": [
+      124.6,
+      279.06,
+      495.2,
+      495.27
+    ],
+    "label": "Fig. 4",
+    "caption": "Fig. 4: Spatial Distribution of Canopy Cover and Environmental Inequality in Eng- land. (A) Average percentage of tree canopy cover at the Local Authority District (LAD) level. Darker green indicates higher canopy cover, with the highest values con- centrated in the South East of England. The inset displays the significant variation across London’s boroughs. (B) Bivariate map showing two measures of environmental inequality, calculated as a Gini coefficient at the LAD level. The colour scale indicates the degree of inequality in the distribution of nearby trees among buildings (blue, y-axis) and in walking distance to a park (red, x-axis). Darker, mixed colours (e.g., purple) signify high inequality in both metrics."
+  },
+  {
+    "file": "figure5.png",
+    "page": 10,
+    "bbox": [
+      143.13,
+      73.7,
+      476.67,
+      407.24
+    ],
+    "label": "Fig. 5",
+    "caption": "Fig. 5: Socioeconomic stratification of correlations between environmental metrics. The scatter plot matrix shows the pairwise relationships between the 3-30-300 rule components (3: Tree Count Index, 30: Canopy Cover, 300: Park Distance), distance to water, and satellite-derived spectral indices (NDVI, NDWI, NDBI). Each point is a Lower Layer Super Output Area (LSOA) in England, coloured by its Index of Multiple Deprivation (IMD) decile, from most deprived (Decile 1, red) to least deprived (Decile 10, blue). Dashed lines indicate the guideline thresholds for the 3-30-300 rule. Note that the axes for Park Distance and Water Distance are on a logarithmic scale."
+  },
+  {
+    "file": "figure6.png",
+    "page": 18,
+    "bbox": [
+      124.6,
+      114.35,
+      495.2,
+      484.96
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure7.png",
+    "page": 19,
+    "bbox": [
+      100.07,
+      284.98,
+      470.68,
+      717.49
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure8.png",
+    "page": 20,
+    "bbox": [
+      124.6,
+      73.7,
+      495.2,
+      506.22
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure9.png",
+    "page": 21,
+    "bbox": [
+      100.07,
+      73.7,
+      470.68,
+      506.22
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure10.png",
+    "page": 24,
+    "bbox": [
+      143.13,
+      73.71,
+      476.67,
+      574.09
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure11.png",
+    "page": 25,
+    "bbox": [
+      100.07,
+      73.7,
+      470.68,
+      444.31
+    ],
+    "label": null,
+    "caption": ""
+  },
+  {
+    "file": "figure12.png",
+    "page": 26,
+    "bbox": [
+      124.6,
+      73.7,
+      495.21,
+      444.31
+    ],
+    "label": null,
+    "caption": ""
+  }
+]

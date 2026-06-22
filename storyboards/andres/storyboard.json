@@ -1,0 +1,94 @@
+{
+  "page_title": "Socioeconomic Stratification of Urban Nature in England",
+  "doi_url": "https://doi.org/10.5281/zenodo.16911970",
+  "sections": [
+    {
+      "slot": "title",
+      "layout": "title",
+      "theme": "title",
+      "cover_image": "cover.png",
+      "heading": "Green Walls of Privilege: How Tree Cover Tracks Deprivation Across England",
+      "subtitle": "An airborne, building-level assessment of the 3-30-300 greening rule across England — and who it leaves behind."
+    },
+    {
+      "slot": "hook",
+      "layout": "quote",
+      "theme": "neutral",
+      "heading": "A simple rule for green cities",
+      "quote": "Every resident should see at least 3 trees from home, live in a neighbourhood with 30% canopy cover, and be within 300 metres of a public park.",
+      "attribution": "The 3-30-300 rule — adopted from Singapore to New York, yet never tested at national scale"
+    },
+    {
+      "slot": "problem",
+      "layout": "split",
+      "theme": "neutral",
+      "heading": "The same country looks green or grey — depending on the metric",
+      "body": "Cities still lack standardised, high-resolution ways to measure who actually benefits from green infrastructure. The stakes are concrete: view England's trees per person and the rural North looks greenest; switch to trees per km² and the dense, affluent South East pulls ahead, with many areas exceeding 3,000 trees per km². The metric you pick changes where greening looks most needed.",
+      "insight": "Per capita and absolute density invert the map — a contradiction that coarse, inconsistent indicators routinely hide.",
+      "figure": "figure1.png",
+      "figure_alt": "Choropleth maps of England showing trees per person versus trees per square kilometre, which produce opposite patterns.",
+      "image_class": "content-image"
+    },
+    {
+      "slot": "method",
+      "layout": "stats_grid",
+      "theme": "tech",
+      "heading": "One framework, national scale",
+      "body": "We built the first open-source, national, building-level assessment of the 3-30-300 rule — pairing open LiDAR with high-performance computing (Apache Sedona and Google Earth Engine) to measure tree proximity, canopy availability and park accessibility for every building in England.",
+      "stat_items": [
+        { "number": "~190M", "label": "Trees segmented from LiDAR", "accent": "" },
+        { "number": "28.9M", "label": "Buildings assessed", "accent": "" },
+        { "number": "32,742", "label": "Neighbourhoods (LSOAs)", "accent": "" },
+        { "number": "3.9M", "label": "Road segments for walk routing", "accent": "" }
+      ]
+    },
+    {
+      "slot": "keyFinding",
+      "layout": "stacked",
+      "theme": "data",
+      "heading": "Trees yes, canopy and parks no",
+      "body": "Only 0.1% of urban neighbourhoods satisfy the full 3-30-300 rule. The '3' is the easy win — in London almost 40% of 8.2 million residents live within 25 m of at least three trees. But the 30% canopy target is the great national deficit, met by only a minority of people in every region, and park access trails the tree rule. Put all three together and the system nearly collapses.",
+      "figure": "figure2.png",
+      "figure_alt": "Bar chart of the population in each English region meeting each component of the 3-30-300 rule.",
+      "image_class": "content-plot"
+    },
+    {
+      "slot": "dataNarrative",
+      "layout": "split",
+      "theme": "neutral",
+      "heading": "A green gap that tracks wealth",
+      "body": "Break each metric down by deprivation decile and a systematic pattern appears. In every region, from the North West to London, the least-deprived neighbourhoods have more trees nearby and higher canopy cover than the most-deprived. Ambient greenness — the street trees and garden canopy that surround a home — is consistently skewed toward wealthier communities.",
+      "insight": "Canopy cover and tree proximity rise with affluence in every single region of England.",
+      "figure": "figure3.png",
+      "figure_alt": "Boxplots of tree count, canopy cover, park distance and water distance across deprivation deciles, grouped by region.",
+      "image_class": "content-plot"
+    },
+    {
+      "slot": "secondaryFinding",
+      "layout": "split_reverse",
+      "theme": "alert",
+      "heading": "Parks flip the script — and leafy regions hide the sharpest divides",
+      "body": "Park access runs the other way: the most-deprived, densest urban cores are often closer to a public park than affluent suburbs, a reverse green gap. Yet the greenest places conceal the worst inequality — a Gini analysis flags Inner London, Birmingham and Manchester as hotspots of unequal access to both nearby trees and parks.",
+      "figure": "figure4.png",
+      "figure_alt": "Maps of average canopy cover and a bivariate Gini map of environmental inequality across England.",
+      "image_class": "content-image"
+    },
+    {
+      "slot": "insight",
+      "layout": "insight",
+      "theme": "insight",
+      "heading": "Green access is a new axis of inequality",
+      "body": "Treating proximity, canopy and park access as distinct dimensions reveals exposure profiles that a single greenness index like NDVI obscures — and that vary systematically with deprivation and urban form. Distance to a park says nothing about its quality, safety or usability; a canopy percentage ignores what those trees actually do. The real power of the 3-30-300 rule is diagnostic.",
+      "cta": "Policy must measure not just how much nature a city has, but who can actually use it."
+    },
+    {
+      "slot": "credits",
+      "layout": "credits",
+      "theme": "footer",
+      "heading": "Credits",
+      "authors": "Andrés Camilo Zúñiga-González, Anil Madhavapeddy, Ronita Bardhan",
+      "affiliations": "Department of Architecture & Department of Computer Science and Technology, University of Cambridge",
+      "cta": "Data & code"
+    }
+  ]
+}

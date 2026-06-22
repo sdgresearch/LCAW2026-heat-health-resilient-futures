@@ -1,0 +1,809 @@
+{
+  "title": "Airborneassessmentuncoverssocioeconomic stratificationofurbannatureinEngland",
+  "authors": [
+    "1 stratificationofurbannatureinEngland"
+  ],
+  "affiliations": [
+    "1,2*2†Andr´esCamiloZu´n˜iga-Gonza´lez,AnilMadhavapeddyand 3 1,2†RonitaBardhan 4 1*DepartmentofArchitecture,UniversityofCambridge,Street,"
+  ],
+  "abstract": "13 Natureaccessisincreasinglyrecognisedasapublichealthandequityimperative, 14 yetcitieslackstandardisedwaystomeasurewhobenefitsfromgreeninfrastruc- 15 ture.Wepresentthefirstnational,building-levelassessmentofthe3–30–300 16 urbangreeningruleacrossEngland,integratinghigh-performancecomputing 17 withopenLiDARandgeospatialdatasets.Ourframeworkquantifiesproximity, 18 availability,andaccessibilityofgreenery,linkingeachtosocioeconomicdepri- 19 vationthroughGini-basedinequalitymetrics.Resultsrevealthatwhilemost 20 Englishresidentsmeetthetreeproximitycriterion,only0.1%ofurbanareasmeet 21 allthreethresholds;canopycoverandparkaccesssharplydivergealongdepri- 22 vationlines.Wealthierareasenjoygreaterambientgreenness,whereasdeprived 23 urbancoresoftenhavebetterproximitytoparksbutlowervegetationdensity. 24 Thestudyoffersascalablecomputationalblueprintforassessingnatureequality 25 anddemonstratesthatgreenaccessibilityrepresentsanewdimensionofsocioe- 26 conomicinequality.Ourfindingscallforintegrativepolicyapproachesthatnot 27 onlymeasurequantitybutalsoaccountforusabilityandserviceprovisionfora 28 moreequitableaccesstonaturewithincities. 29 Keywords:urbangreeninfrastructure,deprivation,3-30-300,greenequality, 30 environmentaldeprivation 31 1 1Introduction 32",
+  "doi": "10.5281/zenodo.16911970).Treesegmentationtilesareavailable",
+  "keywords": [],
+  "sections": [
+    {
+      "heading": "Airborneassessmentuncoverssocioeconomic",
+      "text": "1 stratificationofurbannatureinEngland 2 1,2*2†Andr´esCamiloZu´n˜iga-Gonza´lez,AnilMadhavapeddyand 3 1,2†RonitaBardhan 4 1*DepartmentofArchitecture,UniversityofCambridge,Street, 5 Cambridge,100190,Cambridgeshire,UnitedKingdom. 6 2DepartmentofComputerScienceandTechnology,Universityof 7",
+      "page": 1
+    },
+    {
+      "heading": "Cambridge,Street,Cambridge,100190,Cambridgeshire,United",
+      "text": "8 Kingdom. 9 *Correspondingauthor(s).E-mail(s):acz25@cam.ac.uk; 10",
+      "page": 1
+    },
+    {
+      "heading": "Contributingauthors:avsm2@cam.ac.uk;rb867@cam.ac.uk;",
+      "text": "11 †Theseauthorscontributedequallytothiswork. 12",
+      "page": 1
+    },
+    {
+      "heading": "Abstract",
+      "text": "13 Natureaccessisincreasinglyrecognisedasapublichealthandequityimperative, 14 yetcitieslackstandardisedwaystomeasurewhobenefitsfromgreeninfrastruc- 15 ture.Wepresentthefirstnational,building-levelassessmentofthe3–30–300 16 urbangreeningruleacrossEngland,integratinghigh-performancecomputing 17 withopenLiDARandgeospatialdatasets.Ourframeworkquantifiesproximity, 18 availability,andaccessibilityofgreenery,linkingeachtosocioeconomicdepri- 19 vationthroughGini-basedinequalitymetrics.Resultsrevealthatwhilemost 20 Englishresidentsmeetthetreeproximitycriterion,only0.1%ofurbanareasmeet 21 allthreethresholds;canopycoverandparkaccesssharplydivergealongdepri- 22 vationlines.Wealthierareasenjoygreaterambientgreenness,whereasdeprived 23 urbancoresoftenhavebetterproximitytoparksbutlowervegetationdensity. 24 Thestudyoffersascalablecomputationalblueprintforassessingnatureequality 25 anddemonstratesthatgreenaccessibilityrepresentsanewdimensionofsocioe- 26 conomicinequality.Ourfindingscallforintegrativepolicyapproachesthatnot 27 onlymeasurequantitybutalsoaccountforusabilityandserviceprovisionfora 28 moreequitableaccesstonaturewithincities. 29 Keywords:urbangreeninfrastructure,deprivation,3-30-300,greenequality, 30 environmentaldeprivation 31 1 1Introduction 32",
+      "page": 1
+    },
+    {
+      "heading": "Urbangreeninfrastructureisincreasinglyrecognisedasacriticalcomponentofclimate",
+      "text": "33 resilienceandpublichealth,providingcooling,pollutionmitigation,andopportunities 34 forphysicalactivityandsocialinteraction.Yetdespitethisrecognisedimportance, 35 citiesstilllackstandardised,high-resolutionmetricstoassesswhobenefitsfromnat- 36 uralinfrastructureandhowthesebenefitsaredistributedacrossthepopulation.This 37 measurementgapisespeciallyproblematicforunderstandingenvironmentalinequal- 38 ity,becauseheterogeneouslocalconditionscanbemaskedwhengreennessisassessed 39 usingcoarseorinconsistentindicators,whichmightposeabiggerissueinaplanet 40 where70%ofthepopulationisexpectedtoliveinurbanareasbytheendofthe 41 century[1]. 42",
+      "page": 2
+    },
+    {
+      "heading": "Despitethegrowingrecognitionoftheimportanceofnatureinurbansustain-",
+      "text": "43 abledevelopment[2],thespatialdistributionofvegetationandgreeninfrastructure 44 remainshighlyuneven.Previousstudieshavedocumentedsystematicassociations 45 betweensocioeconomicdeprivationandreducedaccesstoenvironmentalamenities, 46 includingtreecanopyandrecreationalgreenspaces.Theseinequalitiesareshaped 47 byacombinationofhistoricalland-usedecisions,built-environmentconstraints,and 48 demographicprocesses,producingcomplexspatialpatternsthatcannotbecaptured 49 byaggregatedmetricsalone.Accuratelycharacterisingthesepatternsrequireshigh- 50 resolution,spatiallyexplicitmeasurementsthatcanlinkenvironmentalstructureto 51 urbanform. 52",
+      "page": 2
+    },
+    {
+      "heading": "Historically,assessmentsofurbangreenspacehavebeenspatiallyconstrainedto",
+      "text": "53 individualcitiesorlimitedcomparativecasestudies.Whiletheselocalisedapproaches 54 facilitatecontext-specificplanning,theylacktheanalyticalbreadthrequiredtoeval- 55 uateenvironmentaltrendsacrossunifiednationalpolicyframeworks[3–6].Atthe 56 continentalscale,Europeanassessmentshaveidentifiedapronouncedlatitudinalgra- 57 dient,withgreenspaceavailabilitysignificantlyhigherintheNorthernregionsdue 58 toacombinationofbioclimaticconditionsandhistoricalurbandevelopment[7].A 59 similarNorth-SouthdividepersistswithinBritain;however,thisregionaldisparity 60 isfurthercompoundedbysocioeconomicstratificationandthehighconcentrationof 61 residentswithinurbancentres[8,9]. 62",
+      "page": 2
+    },
+    {
+      "heading": "The“3-30-300rule”hasrecentlyemergedasasimplified,actionablebenchmark",
+      "text": "63 toaddressthisgap,proposingthateveryresidentshouldseeatleast3trees,live 64 inaneighbourhoodwith30%canopycover,andbewithin300metersofapublic 65 park[10–12].However,despiteitsglobaladoptionincitiesrangingfromSingapore 66 toNewYork[13–17],therulecurrentlylacksarobustmethodologicalfoundation 67 forstandardisedassessmentacrossdifferentgeographicandsocioeconomiccontexts. 68",
+      "page": 2
+    },
+    {
+      "heading": "Thismethodologicalgappreventsasystematicevaluationofwhethercurrenturban",
+      "text": "69 ´´planningtrulyfostersgreenequality”ormerelyperpetuatesexistingsocioeconomic 70 stratification.Whilepreviousattemptstomeasuretherulehavereliedonlabour- 71 intensivestreet-levelphotographyormanualmeasurement,theseapproacheslackthe 72 scalabilityneededtomonitorlargeareasandtheprecisiontocapturebuilding-level 73 variation[12,18,19]. 74",
+      "page": 2
+    },
+    {
+      "heading": "Duetothelackofastandardmethodology,wedevelopandapplyanovelcom-",
+      "text": "75 putationalframeworktoconductthefirstopen-source,national-scale,building-level 76 2 assessmentofthe3-30-300rule,usingEnglandasourcasestudy.Themethodology 77 presentedapplieshigh-performancecomputingonpubliclyavailablegeospatialdatato 78 overcomepreviouslimitationsofscaleandresolution.Specifically,we:1)developand 79 validatenovel,high-resolutionproxiesfortherule,2)directlyquantifyenvironmental 80 inequalitybycalculatingGinicoefficients[20]frombuilding-leveldataonresidential 81 units,and3)criticallyevaluatehowthesehuman-centric3-30-300metricscorrelate 82 andintegratewithtraditionalremote-sensing-derivedindices. 83",
+      "page": 2
+    },
+    {
+      "heading": "Therefore,ourstudyrepresentsareplicableblueprintforquantifyingnatureaccess",
+      "text": "84 usingmodernspatialanalysistoolsonopen-sourcebigdata.Applyingthisframework 85 acrossEngland,weshowthatwhiletreesarewidelyavailable,canopycoverandpark 86 accessremainsignificantbarriersformanyresidents.Furthermore,thesegapsinaccess 87 andavailabilityaligncloselywithsocioeconomicindicators,highlightingthelackof 88 urbannatureasanewlayerofinequality.Addressingthesedisparitiesisessentialto 89 creatingfairer,moresustainabledevelopmentplansinourcities. 90 2Results 91 2.1HowmanytreesarethereinEnglishcities? 92",
+      "page": 3
+    },
+    {
+      "heading": "OurnationalLiDARsegmentationidentifiedapproximately190milliontreesacross",
+      "text": "93",
+      "page": 3
+    },
+    {
+      "heading": "England.Akeyfindingisthestarkurban-ruraldivide:only26.9%ofthesetreesare",
+      "text": "94 locatedwithinurbanareasasdefinedbytheONS.Forthesubsequentanalysisof 95 the“3-30-300”rule,weusedafiltereddatasetof156millionsignificanttrees(those 96 ²withaheight>3mandcrownarea>10m;seeMethods).Thisentireanalysiswas 97 performedacross32,742LowerLayerSuperOutputAreas(LSOAs),whichrepresent 98 thegeographiesforwhichconsistent2019IndexofMultipleDeprivation(IMD)data 99 wereavailable,explainingminordiscrepancieswiththetotalnumberofofficial2021 100",
+      "page": 3
+    },
+    {
+      "heading": "LSOAs.Amapofalltheareascoveredbythesegmentationalgorithmisshownin",
+      "text": "101 FigureA1. 102 2.2TreeDistribution:PerCapitavs.AbsoluteDensity 103",
+      "page": 3
+    },
+    {
+      "heading": "OuranalysisoftreedistributionacrossEnglandrevealsafundamentaldichotomy:the",
+      "text": "104 greenestpartsofthecountrycanbeidentifiedaseitheritsmostruralexpansesorits 105 mostdenselypopulatedurbanregions,dependingentirelyonthemetricused.This 106 finding(Figure1)presentsacriticalmeasurementcontradictionforurbanplanners 107 andpolicymakers,asthechoiceofmetriccanleadtodramaticallydifferentconclusions 108 aboutwheregreeninginterventionsaremostneeded(Figure1). 109",
+      "page": 3
+    },
+    {
+      "heading": "Whenviewedthroughapercapitalens,treerichnessappearsmostplentifulin",
+      "text": "110 rural,sparselypopulatedregions.LocalAuthorityDistricts(LADs)intheNorthof 111",
+      "page": 3
+    },
+    {
+      "heading": "England(e.g.Northumberland,Cumbria)andtheSouthWestexhibitthehighest",
+      "text": "112 values,oftenexceeding40treesperperson(Figure1A).Fromthisperspective,aclear 113 urban-ruraldivideemerges,suggestingthatresidentsofmajormetropolitanareaslike 114 LondonandManchesterhavetheleastaccesstotreeresources. 115",
+      "page": 3
+    },
+    {
+      "heading": "However,thisnarrativeiscompletelyinvertedwhenconsideringabsolutedensity",
+      "text": "116 ²(treesperkm),whichmeasurestheconcentrationoftreesinagivenarea(Figure1B). 117 3",
+      "page": 3
+    },
+    {
+      "heading": "Here,thehighestconcentrationsarefoundnotinthecountrysidebutinthedensely",
+      "text": "118 populated,affluentSouthEast.ThecommuterbeltsurroundingGreaterLondon,along 119 withpartsofLondonitself,showsthehighestdensities,withmanyareascontaining 120 ²over3,000treesperkm.Thisfindingchallengesthesimplisticviewofcitiesasconcrete 121 jungles,revealingthatmanyurbanandsuburbanareascontainanexceptionallyhigh 122 overalltreestock,eventhoughitissharedamongmoreresidents. 123",
+      "page": 4
+    },
+    {
+      "heading": "England.ChoroplethmapsillustratetwometricsoftreedistributionattheLocal",
+      "text": "AuthorityDistrictlevel.(A)Treesperperson,ameasureofpercapitatreeavailability. ²(B)Treesperkm,ameasureofabsolutetreedensity.MapinsetsdepicttheGreater Londonarea. 2.3QuantificationandAttainmentofthe3-30-300 124",
+      "page": 4
+    },
+    {
+      "heading": "Whenaccountingforareaswithhighaccesstotreesandotherformsofgreeninfras-",
+      "text": "125 tructure,weconsideredonlythoseinLSOAsclassifiedasurbanbytheONS,further 126 reducingthenumberofareas,asshowninTableA1.Mostareashadanaverageof 127 morethan3visibletrees,withnosignificantdifferencesbetweenregions,whilecanopy 128 covershowedthelowestpercentageofhighcover,withtheSouthWestconsiderably 129 outclassingtheotherregions.Moreover,accesstoparkswassignificantlyhigherin 130",
+      "page": 4
+    },
+    {
+      "heading": "Londonthaninotherregions,withtheEasternregionsshowinghigheraveragewalk-",
+      "text": "131 ingdistances.Intotal,only0.1%ofurbanLSOAsmetallthreerules,withtheNorth 132 Easthavingthehighestnumberofregionsthatdidso. 133 4",
+      "page": 4
+    },
+    {
+      "heading": "Ournationalassessmentrevealsaprofounddisparityintheattainmentratesfor",
+      "text": "134 thethreedistinctcomponentsofthe3-30-300ruleacrossallregionsofEngland(Figure 135 2). 136",
+      "page": 5
+    },
+    {
+      "heading": "The‘3-treeproximity’ruleisthemostwidelyachievedguideline.InLondon,for",
+      "text": "137 example,almost40%oftheregion’s8.2millionresidentsareestimatedtolivewithin 138 25mofatleast3treesfromtheirhomes,withnocleardifferencebetweeninnerand 139 outerpartsofthecity.Thispatternofhighattainmentholdstrueacrossthecountry, 140 fromtheNorthWest,wheremostofits6.5millionpeoplemeetthestandard,tothe 141",
+      "page": 5
+    },
+    {
+      "heading": "SouthWest,indicatingwidespreadsuccessinintegratingindividualtreeswithinhighly",
+      "text": "142 urbanisedareas.Nonetheless,approximatelyonlyonequarteroftheinhabitantsof 143 YorkshireandtheHumberandtheNorthEastaccomplishthegoal. 144",
+      "page": 5
+    },
+    {
+      "heading": "Themostsignificantnationaldeficitisforthe‘30%-canopycover’rule,which",
+      "text": "145 ismetbythesmallestnumberofpeople.Ineveryregion,onlyaminorityofthe 146 populationlivesinaneighbourhoodwithanadequatetreecoverage,withtheSouth 147",
+      "page": 5
+    },
+    {
+      "heading": "Eastshowingthelargestproportionofurbaninhabitants,followedbytheNorthEast,",
+      "text": "148 EastofEngland,SouthWestandOuterLondon. 149",
+      "page": 5
+    },
+    {
+      "heading": "The‘300m-parkaccessibility’ruledemonstratesthesecond-highestlevelof",
+      "text": "150 attainment.Whileasubstantialnumberofpeoplemeetthisstandard,thetotaliscon- 151 siderablylessthanforthe3-treerule.Londonagainhasthelargestnumberofresidents 152 whereapublicparkiswithinwalkingdistance,particularlyinthecentralboroughs, 153 whereastheEastMidlands,EastofEnglandandSouthEastshowthelargestnumber 154 ofinhabitantswithlowaccessibilitytogreenspaces. 155",
+      "page": 5
+    },
+    {
+      "heading": "England.Thechartdisplaystheproportionofthepopulationineachregionthatfulfil",
+      "text": "eachoneoftherules(darkcolours)andhowclosetheyaretoachievingthem(light colours):proximitytoatleast3treesina25m-radiusfromaresidence(3,blue), livinginaneighbourhoodwithatleast30%treecanopycover(30,green),andliving within300metresofapublicpark(300,orange). 5 2.4SystemicEnvironmentalInequalityGradientsinGreen 156",
+      "page": 5
+    },
+    {
+      "heading": "Infrastructure",
+      "text": "157",
+      "page": 6
+    },
+    {
+      "heading": "Todissecttherelationshipbetweensocioeconomicstatusandgreeninfrastructure,",
+      "text": "158 weanalysedthedistributionofeach3-30-300componentacrossIndexofMultiple 159",
+      "page": 6
+    },
+    {
+      "heading": "Deprivation(IMD)decilesforeveryregioninEngland(Figure3).Theanalysisreveals",
+      "text": "160 aclear,systematic,andcontrastingpatternofenvironmentalinequalityfordifferent 161 typesofgreenspace. 162",
+      "page": 6
+    },
+    {
+      "heading": "Forvegetation-basedmetrics,weobserveaconsistentgreengap:canopycoverand",
+      "text": "163 treeproximityarestronglypositivelycorrelatedwithsocioeconomicadvantage.Within 164 everysingleregion,fromtheNorthWesttoLondon,LSOAsintheleastdeprived 165 decileshavemoretreesinproximity(Figure3A)andhighercanopycover(Figure 166 3B)thanthoseinthemostdepriveddeciles.FortheLondoncase,thereisnoclear 167 differenceincanopycover,butthereismorevariabilityinproximitytotrees. 168",
+      "page": 6
+    },
+    {
+      "heading": "Incontrast,parkaccessibilityexhibitsareversegreengap(Figure3C).Themost",
+      "text": "169 deprivedLSOAsare,onaverage,locatedclosertoapublicparkthantheleastdeprived 170",
+      "page": 6
+    },
+    {
+      "heading": "LSOAs.Thistrendisvisibleacrossmostregionsandsuggeststhatdenseurbanenvi-",
+      "text": "171 ronments,typicallyassociatedwithhigherdeprivation,areclosertopublicparksthan 172 moreaffluentsuburbanareas.Interestingly,innerboroughsinLondonhavebetter 173 accesstoparks.Thesefindingsexposeafundamentaldivergenceinthedistributionof 174 urbangreeninfrastructure:whileformalpublicparksarehighlyaccessibleindense, 175 oftendeprivedareas,ambientgreenness,suchasstreettreesandgardencanopy,is 176 systematicallyskewedtowardswealthiercommunities. 177 Inadditiontothe3-30-300,waterwasalsocontrastedregionally(Figure3D). 178",
+      "page": 6
+    },
+    {
+      "heading": "Althoughitdidn’tshowastrongcorrelationwithdeprivation,insomeregions,such",
+      "text": "179 astheNorthWestandtheEastMidlands,residentsofaffluentareaslivecloserto 180 watersources,whileintherestoftheregions,accesstowaterismoreuniform. 181 6 Fig.3:EnvironmentalinequalityinaccesstogreeninfrastructureacrossEngland.",
+      "page": 6
+    },
+    {
+      "heading": "OutputArea(LSOA)levelisshown,groupedbyregion.(A)TreeCountat25m",
+      "text": "radius.(B)Canopycoverpercentage.(C)Walkingdistancetothenearestpark.(D)",
+      "page": 7
+    },
+    {
+      "heading": "Distancetothenearestwatersource.Dashedhorizontallinesindicatetherespective",
+      "text": "guidelinethresholdsforthe3-30-300.Eachboxplotsummarisesthedistributionfor",
+      "page": 7
+    },
+    {
+      "heading": "LSOAswithinagivenIndexofMultipleDeprivation(IMD)decile,colouredfrommost",
+      "text": "deprived(Decile1,red)toleastdeprived(Decile10,blue);y-axesarelog-scaled. 7 2.5TheGeographyofGreennessversusInequality 182",
+      "page": 7
+    },
+    {
+      "heading": "Tounderstandtherelationshipbetweenthequantityanddistributionofgreeninfras-",
+      "text": "183 tructure,wemappedbothaveragecanopycoverandtheintra-regionalinequalityin 184 accesstonatureacrossEngland(Figure4).Theanalysisofaveragecanopycovercon- 185 firmsthattheSouthEastofEnglandisthenation’sgreenestregioninabsoluteterms 186 (Figure4A).LocalAuthoritiesinandaroundtheLondoncommuterbelt,suchasSur- 187 rey,consistentlyshowthehighestcanopycover,oftenapproachingthe30%guideline, 188 whilemanydistrictsintheMidlandsandtheNorthhaveloweraveragecanopycover. 189",
+      "page": 8
+    },
+    {
+      "heading": "However,thispictureofagreenSouthEastisfundamentallychallengedbythe",
+      "text": "190 geographyofinequality(Figure4B).ThebivariateanalysisofGinicoefficientsreveals 191 thatthemostsevereinequalitiesingreeninfrastructureaccessareoftenconcentrated 192 withinthesesameleafyregions.MajorurbancentressuchasInnerLondon(Figure 193 4Binset),Birmingham,andManchesteremergeasdarkhotspots,indicatinghigh 194 inequalityinthedistributionofbothnearbytrees(bluetones)andwalkingdistance 195 toparks(redtones)amongtheirrespectiveresidents. 196",
+      "page": 8
+    },
+    {
+      "heading": "Fig.4:SpatialDistributionofCanopyCoverandEnvironmentalInequalityinEng-",
+      "text": "land.(A)AveragepercentageoftreecanopycoverattheLocalAuthorityDistrict (LAD)level.Darkergreenindicateshighercanopycover,withthehighestvaluescon- centratedintheSouthEastofEngland.Theinsetdisplaysthesignificantvariation acrossLondon’sboroughs.(B)Bivariatemapshowingtwomeasuresofenvironmental inequality,calculatedasaGinicoefficientattheLADlevel.Thecolourscaleindicates thedegreeofinequalityinthedistributionofnearbytreesamongbuildings(blue, y-axis)andinwalkingdistancetoapark(red,x-axis).Darker,mixedcolours(e.g., purple)signifyhighinequalityinbothmetrics. 8 2.6SocioeconomicStratificationofUrbanEnvironmental 197",
+      "page": 8
+    },
+    {
+      "heading": "Metrics",
+      "text": "198",
+      "page": 9
+    },
+    {
+      "heading": "Tounderstandhowtherelationshipsbetweendifferentenvironmentalmetricsare",
+      "text": "199 shapedbysocioeconomicstatus,wevisualisedtheirpairwisecorrelations,witheach 200",
+      "page": 9
+    },
+    {
+      "heading": "LowerLayerSuperOutputArea(LSOA)colouredbyitsIndexofMultipleDepriva-",
+      "text": "201 tion(IMD)decile(Figure5).Theanalysisrevealsapowerful,intertwinedrelationship 202 betweenvegetation,built-updensity,anddeprivation.Weobserveastrongpositive 203 correlationbetweenourvegetation-basedrulecomponents(‘3’and‘30’)andsatellite- 204 derivedNormalisedDifferenceBuilt-upIndex(NDVI)(FigureA2).Critically,these 205 plotsshowaclearsocioeconomicstratification:LSOAswithhighNDVIandhigh 206 canopycoverarealmostexclusivelytheleastdeprived,whilethosewithlowvegeta- 207 tionandhighNormalisedDifferenceBuilt-upIndex(NDBI)(FigureA3)scoresare 208 predominantlythemostdeprived. 209",
+      "page": 9
+    },
+    {
+      "heading": "Thethresholdsofthe3-30-300rulefurtherillustratethesedisparities.Alarge",
+      "text": "210 numberofthemostdeprivedLSOAsfallbelowthe30%canopycoverguideline,whilea 211 majorityoftheleastdeprivedLSOAsmeetorexceedit,confirmingthatfailuretomeet 212 thevegetation-basedcomponentsoftheruleissystematicallylinkedtosocioeconomic 213 deprivation,asdemonstratedintheprevioussections.Thispatternisinvertedwhen 214 consideringparkaccessibility.Theplotofparkdistance(‘300’)versusNDBIshowsthat 215 themostdeprivedLSOAs,whichhavethehighestbuilt-updensity,arealsoclustered 216 atshorterdistancestoparks.Thiscorroboratesthedistributionalanalysisfindingthat 217 parkprovisionisoftenbetterindenseurbanareas,evenasambientgreennessislower. 218",
+      "page": 9
+    },
+    {
+      "heading": "Overall,thematrixdemonstratesthatenvironmentalvariablesarenotindependent",
+      "text": "219 butformanexusinwhichdeprivationisco-locatedwithlowambientvegetationand 220 highbuilt-updensity,despiteoftenbeingclosetoformalparks. 221",
+      "page": 9
+    },
+    {
+      "heading": "Theanalysisfurtherrevealsthatproximitytobluespace,asmeasuredbywater",
+      "text": "222 distance,representsadistinctdimensionofenvironmentalcharacter,withlowcorre- 223 lationwiththegreeninfrastructuremetricsassessed.Thissuggeststhatthespatial 224 distributionofblueinfrastructureisdrivenbyfactorsdifferentfromthoseofparks 225 andtreecanopy,andthatitsrelationshipwithdeprivationislessdirect.Incontrast, 226 theNormalisedDifferenceWaterIndex(NDWI)(FigureA4)exhibitedapositivecor- 227 relationwithNDVI,underscoringthefrequentco-locationofblueandgreenspaces 228 withinfeatureslikevegetatedriparianzones.Finally,NDBIshowedastrongnegative 229 correlationwithboththe‘3’and‘30’components.Thispowerfulinverserelationship 230 highlightshowdense,greyurbaninfrastructurefundamentallyconstrainstheavailable 231 spacefortreesandcanopy,quantitativelylinkingthemostheavilybuilt-upLSOAs 232 withthelowestlevelsofambientgreenness. 233 9 Fig.5:Socioeconomicstratificationofcorrelationsbetweenenvironmentalmetrics.",
+      "page": 9
+    },
+    {
+      "heading": "Thescatterplotmatrixshowsthepairwiserelationshipsbetweenthe3-30-300rule",
+      "text": "components(3:TreeCountIndex,30:CanopyCover,300:ParkDistance),distance towater,andsatellite-derivedspectralindices(NDVI,NDWI,NDBI).Eachpointisa",
+      "page": 10
+    },
+    {
+      "heading": "Deprivation(IMD)decile,frommostdeprived(Decile1,red)toleastdeprived(Decile",
+      "text": "10,blue).Dashedlinesindicatetheguidelinethresholdsforthe3-30-300rule.Note thattheaxesforParkDistanceandWaterDistanceareonalogarithmicscale.",
+      "page": 10
+    },
+    {
+      "heading": "Toevaluatetherelationshipsbetweenremotesensingindicesandthe3-30-300",
+      "text": "234 variables,aswellaswateraccess,wefittedthreespatial-errormodelstoidentifythe 235 driversofinequalityintreecount,parkdistance,andwaterdistanceattheLSOAlevel. 236 −16Thesignificanceofthespatialerrorterm(λ)inallmodels(p<2.210)confirmed 237 strongspatialclustering(TableA2). 238",
+      "page": 10
+    },
+    {
+      "heading": "Wefoundthatmoredeprivedareas,asmeasuredbyIMDsufferfromgreater",
+      "text": "239 inequalityintreedistribution(β=0.0004,p=0.003).However,thiseffectismainly 240 10 aruralphenomenon.Inurbanareas,therelationshipbetweendeprivationandtree 241 inequalityissignificantlyweaker(p=0.009fortheinteractionterm).Equalityisalso 242 worseinhighlybuilt-upareas(NDBI)andplaceswithlessoverallgreenness(NDVI), 243 whileit’ssurprisinglylowerinmoredenselypopulatedLSOAs. 244",
+      "page": 10
+    },
+    {
+      "heading": "Forparkaccess,thetrendreverses:higherIMDscoresareassociatedwithlower",
+      "text": "245 inequality(β=−0.0005,p=0.010).Thissuggestsapatternofuniformlypooraccess 246 inmoredeprivedareasratherthanselectiveaccess.Urbanareasgenerallyhavemore 247 equalaccesstoparksthanruralones.Thestrongestpredictorswereenvironmental, 248 withinequalityrisingwithpopulationdensityandfallingingreenerareas(NDVI). 249",
+      "page": 11
+    },
+    {
+      "heading": "TherelationshipwasespeciallypronouncedinLondon,wherehighdeprivationwas",
+      "text": "250 associatedwithevengreaterequalaccess. 251",
+      "page": 11
+    },
+    {
+      "heading": "Thelinkbetweendeprivationandaccesstowatervariessignificantlydepending",
+      "text": "252 −9onlocation.Apowerfulinteraction(p=1.310)revealstwoopposingtrends:in 253 ruralareas,moredeprivationisassociatedwithlowerinequality,whereasinurban 254 areas,therelationshipreversesandmoredeprivationisstronglyassociatedwithhigher 255 inequality.Overall,wateraccessismoreunequalinurbanLSOAs.Thispatternis 256 exacerbatedbyhighpopulationdensityandurbandevelopment,andmitigatedby 257 vegetation(NDVI)andwaterbodies(NDWI).Ourfindingshighlightacriticalurban- 258 ruraldivideinenvironmentaljusticeconcerningbluespaces(FigureA5). 259 3Discussion 260",
+      "page": 11
+    },
+    {
+      "heading": "Inthisstudy,weprovidethefirstnational,building-levelassessmentofthe3-30-300",
+      "text": "261 urbangreeningruleforEnglandandshowthat,whiletreeproximityiswidelyachieved, 262 canopycoverandparkaccessibilitytargetsaresystematicallymissedandstrongly 263 stratifiedbydeprivation,region,andsettlementtype.Englandbroadlymeetsthe 264 ‘3’guideline,butthe‘30’and‘300’thresholdsarerarelyattained,andthedeficits 265 arepatternedratherthanrandom:treecanopyisconsistentlyconcentratedinmore 266 affluentareas,whereasproximitytoparksishighestindenser,moredeprivedurban 267 centres.Thisconfigurationproducesageographyofenvironmentalinequalityinwhich 268 thetypeandqualityofavailablenatureareshapedbybothwealthandurbanform. 269",
+      "page": 11
+    },
+    {
+      "heading": "Environmentalinequalitiesinaccesstourbannatureemergealongintersecting",
+      "text": "270 regional,urban–rural,andsocioeconomicgradients.Southernregions,particularlythe 271",
+      "page": 11
+    },
+    {
+      "heading": "SouthEast,exhibithighertreedensityandcanopycover,butthisadvantageweak-",
+      "text": "272 ensoncepopulationdensityisaccountedfor,asurbancoresconcentrateresidents 273 withoutproportionalincreasesintrees.Acrossregions,ruralareasprovidemoretrees 274 percapita,whilemajorcitiescontainmanytreesinabsolutetermsbutfewerper 275 person,indicatingthatexperiencedgreennessdependsstronglyondemographiccon- 276 text.Withincities,socioeconomicdisparitiesfurthersharpenthesepatterns:affluent 277 neighbourhoodsconsistentlybenefitfromgreatercanopycoverandmoreequaltree 278 distribution,whereasdeprivedareasexperiencelowerambientvegetationandmore 279 unequalaccesstobluespaces,reinforcingenvironmentaldisadvantage. 280",
+      "page": 11
+    },
+    {
+      "heading": "Incontrast,parkaccessibilityshowsaninverserelationshipwithdeprivation,with",
+      "text": "281 themostdeprivedareasmostfrequentlymeetingthe300-mguideline.Thispara- 282 doxhighlightsthelimitationsofdistance-basedmetricsincapturingeffectiveaccess 283 11 toenvironmentalbenefits,asproximityalonedoesnotreflectparkquality,safety, 284 usability,orecologicalfunction[21].Similarly,canopycovertargetsoverlookfunc- 285 tionalvariationamongtreespeciesrelevanttocooling,airquality,andbiodiversity 286 [2].Takentogether,thesefindingsindicatethattheprimaryvalueofthe3-30-300 287 frameworkliesinitsdiagnosticcapacity:treatingproximity,canopyavailability,and 288 parkaccessibilityasdistinctdimensionsrevealsheterogeneousexposureprofilesthat 289 compositegreennessindicessuchasNDVIobscure,andthatvarysystematicallywith 290 deprivationandsettlementtype. 291",
+      "page": 11
+    },
+    {
+      "heading": "Ourframeworkshowsitisfeasibletoconductnational,building-levelanalyses",
+      "text": "292 usingopen-accessairborneimageryandscalablecomputingplatformssuchasApache 293",
+      "page": 12
+    },
+    {
+      "heading": "SedonaandGoogleEarthEngine.Thisestablishesareplicableblueprintforother",
+      "text": "294 nationsseekingtoassessenvironmentalequity.ComparisonswiththeForestResearch 295",
+      "page": 12
+    },
+    {
+      "heading": "TreesOutsideWoodland(TOW)datasetshowourprocessidentifiesmoreindivid-",
+      "text": "296 ualtreesthankstofinercrowndelineation(TableA3).Whilethislikelyyieldsa 297 moredetailedyetconservativeestimate,limitationsremain,suchasundercounting 298 understorytreesandmisclassifyingshrubs. 299",
+      "page": 12
+    },
+    {
+      "heading": "Thisstudymarksanimportantsteptowardequitableprovisionofnatureincities,",
+      "text": "300 butitsgreatestvalueliesinintegratingemergingdatasourcesandcomputingtools. 301",
+      "page": 12
+    },
+    {
+      "heading": "Futureresearchshouldcombineaerialandgroundperspectives,likehyperspectraland",
+      "text": "302 street-levelimagery,andcitizensurveys,toaddressaspectsofqualityandusability 303 thatremotesensingcannotcapture.Linkingthesedatasetswithinacommonanalyti- 304 calframeworkwillenableamorecompleteassessmentofurbanecosystems,considering 305 notjustgreenandblueinfrastructure,butalsohowpeopleperceive,use,andben- 306 efitfromthesespaces.Embeddingsuchdata-richapproachesinurbanplanningwill 307 becriticaltoensuringthatgreeningstrategiesdelivermeaningfulenvironmentaland 308 socialvalueforallcommunities. 309 4Methods 310",
+      "page": 12
+    },
+    {
+      "heading": "Ourstudyemploysamulti-stagemethodologytoquantifythe3-30-300ruleata",
+      "text": "311 nationalscale,assessitsrelationshipwithsocioeconomicdeprivation,andcompare 312 itscomponentstotraditionalremotesensingindices.Theworkflowencompasses 313 dataacquisition,high-resolutiongeospatialprocessing,andstatisticalanalysisof 314 environmentalinequality. 315 4.1DefinitionofStudyArea 316",
+      "page": 12
+    },
+    {
+      "heading": "Mostgeographicstatisticsreleasedbypublicagencies,particularlyforcensus-related",
+      "text": "317 studiesinGreatBritain,arebasedonLowerLayerSuperOutputAreas(LSOAs) 318 asthemeasurementunit,whichiswhatweusedinourstudy.However,onlythose 319 whowereinEnglandaccordingtotheofficialDecember2021releasebytheOfficefor 320 NationalStatistics(ONS)wereconsidered. 321 12 4.2Socio-EconomicandDemographicIndicators 322",
+      "page": 12
+    },
+    {
+      "heading": "TheIndexofMultipleDeprivation(IMD)isametriclastproducedin2019bythe",
+      "text": "323",
+      "page": 13
+    },
+    {
+      "heading": "MinistryofHousing,CommunitiesandLocalGovernmentforeveryLSOAinEng-",
+      "text": "324 land.Theindexsummarisessevenmaindomainsofinequality:Income,Employment, 325",
+      "page": 13
+    },
+    {
+      "heading": "Education,Health,Crime,HousingandEnvironment.Thescoresforeachcomponent",
+      "text": "326 weredownloadedfromtheConsumerDataResearchCentre(CDRC)onlineplatform. 327",
+      "page": 13
+    },
+    {
+      "heading": "Inaddition,themid-2022editionoftheONS’spopulationestimates,includingage",
+      "text": "328 groupsandgendercounts,isincludedintheanalysis.Thesevariablesarealsoavailable 329 attheLSOAlevel. 330 4.33-30-300Metrics 331",
+      "page": 13
+    },
+    {
+      "heading": "Mostcountry-widedatasetsfortreecoverorindividualtreelocationsarepropri-",
+      "text": "332 etary;therefore,ourapproachtomeasuringthe’3-30-300’rulewasbasedonusingthe 333 publiclyavailable1-m-resolutionVegetationObjectModel(VOM),gatheredbythe 334",
+      "page": 13
+    },
+    {
+      "heading": "EnvironmentAgencyandpublishedbyDepartmentforEnvironment,Food&Rural",
+      "text": "335 Affairs(Defra)aspartoftheirLightDetectionandRanging(LiDAR)programme. 336 4.3.1TreeSegmentation 337 WefirstsegmentedindividualtreesontheVOMusingthelidRpackageinR[22]. 338",
+      "page": 13
+    },
+    {
+      "heading": "Tosegmentthecrownshape,theheightwasusedwiththeDalponteand&Coomes",
+      "text": "339 algorithm[23]andacustomisedformulafortheLocalMaximumFilter(LMF),asseen 340 inEquation1,wherezistheheightinmetresforagivenpixel,andtheresultisthe 341 windowsizetocheckforminimumandmaximumvaluestomodelthecrownshape. 342",
+      "page": 13
+    },
+    {
+      "heading": "Thisapproachismoreadaptivethanafixed-sizefilter,asitenablesthealgorithm",
+      "text": "343 tosearchforsmallercrownsinareaswithdense,youngtreesandlargercrownsin 344 mature,isolatedtrees,therebybetterreflectingthereal-worldforeststructure.While 345 methodswithhighergeometricfidelityexistforsingle-treeanalysis,ourapproachis 346 optimisedforlarge-scalequantification.Itsuseofasimplifiedcrownmodel,combined 347 withthedataset’sbroadspatialrange,offersaconsistentmethodologyforquantifying 348 treeswithoutintroducingsystematicbiastotheoverallfindings. 349  minsize,ifs<minsize  ",
+      "page": 13
+    },
+    {
+      "heading": "LMF(z)=(1)s,ifminsize≤s≤maxsize",
+      "text": " maxsize,ifs>maxsize",
+      "page": 13
+    },
+    {
+      "heading": "Where:",
+      "text": "350 (cid:22)(cid:18)(cid:19)(cid:23) 2(z−µ) s=6+18·exp− 22σ",
+      "page": 13
+    },
+    {
+      "heading": "With:",
+      "text": "351 -z=canopyheightatagivenlocation 352 -µ=18(meanoftheGaussianfunction) 353 -σ=7(spreadoftheGaussianfunction) 354 -minsize=7(minimumsearchwindowsize) 355 13 -maxsize=0.7×P(z)(maximumsearchwindowbasedonthe95thpercentile) 95356 357",
+      "page": 13
+    },
+    {
+      "heading": "Theresultingtreeswerevectorisedaspointsandgroupedtogetherintothe50x50-",
+      "text": "358 kmtiles,followingthedefinitionintheBritishNationalGridreleasedbytheOrdnance 359 Survey(OS),whichwerethensavedasgeoparquetfiles. 360 4.3.23Component 361",
+      "page": 14
+    },
+    {
+      "heading": "Wedefinethefirstcomponentoftherule(3)astreeproximity.Wecreatedbuffersof",
+      "text": "362 differentsizes(10,25,50,75and100m)aroundeachfeatureintheVeriskbuildings 363 datasetandcountedthenumberoftreesinsidethatarea.Thisdatasetincludesfeatures 364 suchasheight,numberoffloorsanddistancetowater,whichthisstudyusesto 365 quantifywateraccess.Duetothenumberofpolygonsinthebuildingslayer,thisstep 366 wasperformedusingApacheSedonaRDDAPIinPythonalongsideavectorisedand 367 point-basedversionoftheVOM-derivedtreeproduct.Thisspatialjoinoperationused 368 QuadTreespatialindexingandKDBTreepartitioningtooptimisecomputationtime. 369 4.3.330Component 370",
+      "page": 14
+    },
+    {
+      "heading": "Canopycoverorgreenspaceavailability(30)wasobtainedbycreatingabinarylayer",
+      "text": "371 fromtheVOMraster,assigningvaluesbetween3and60mto1.Then,usingthe 372 LSOAboundaries,wecalculatedthetreecoverageat1mresolution. 373 4.3.4300Component 374",
+      "page": 14
+    },
+    {
+      "heading": "Finally,forparkaccessibility(300),wefilteredtheOSGreenSpaceLayertoinclude",
+      "text": "375 onlypublicparksandcalculatedthewalkingdistance(network-based)fromeachbuild- 376 ingtotheclosestgreenspaceaccesspoint.Toaccomplishthis,aroadnetworkwas 377 builtfromtheOSRoadsdataset,andDijkstra’salgorithmwasusedtomeasurethe 378 shortestpathalongthegraphbetweeneachbuildinganditscorrespondingpark. 379",
+      "page": 14
+    },
+    {
+      "heading": "Duetothesizeofthedatasets,particularlyofthebuildingsandVOM-derivedtrees,",
+      "text": "380 theresultsofthethreecomponentswerecalculatedusingLocalAuthorityDistrict 381 (LAD)geometries,wherethedatasetswereclippedusingtheLADtoreducethe 382 numberofiterations.Finally,the3and300components,measuredatthebuilding 383 level,wereaggregatedattheLSAOleveltomatchtheIMDspatialunitofmeasurement 384 asthatofthe30-component.Inaddition,atotaltreecountwasconductedatthesame 385 geographiclevel. 386 4.4SpectralIndices 387",
+      "page": 14
+    },
+    {
+      "heading": "Threemain(normalised)spectralindiceswereconsideredinthisstudy.Theseindica-",
+      "text": "388 torswerecalculatedusingSentinel2scenesfrom2024withvaluesunder10%cloud 389 coveragethroughtheGoogleEarthEnginePythonAPI[24].Thesewereestimated 390 asthemaximumfortheentireyearforthestudyregion.Toaggregatethevaluesat 391 theLSOAlevel,weusedthemedianvalueforallpixelsfallingintothepolygon. 392 393 14",
+      "page": 14
+    },
+    {
+      "heading": "Table1:NormalisedspectralindicescalculatedusingSentinel2",
+      "text": "scenes. IndexNameFormulaReference B11−B8NDBINormalizedDifferenceBuilt-UpIndex[25,26] B11+B8 B8−B4NDVINormalizedDifferenceVegetationIndex[27,28] B8+B4 B3−B8NDWINormalizedDifferenceWaterIndex[26,29] B3+B8 4.5DataSynthesisandScaleofAnalysis 394",
+      "page": 15
+    },
+    {
+      "heading": "Toconductthefirstnational-scaleassessmentofthe3-30-300rule,wegathered",
+      "text": "395 multiplehigh-resolutiongeospatialdatasets.Thisprocesscreatedacomprehensive 396 building-levelrecordofpotentialnatureexposurefortheentiretyofEngland,repre- 397 sentingananalysisofunprecedentedscaleandgranularity.Thecorecomponentsofthis 398 synthesiseddatasetaresummarisedinTable2,quantifyingthemillionsofindividual 399 featuresprocessedtoderiveourfindings. 400",
+      "page": 15
+    },
+    {
+      "heading": "Table2:DataSynthesisandScaleoftheNational3-30-300Assessment.Thistable",
+      "text": "outlinestheprimarydatasets,unitofanalysis,andoverallscaleforeachanalytical componentquantifiedacrossEngland. AnalyticalCom-CoreDatasetsUsedInitialUnitofScaleofAnalysis(No. ponentMeasurementofFeatures) 3(Proximity)VOM,BuildingsIndividual˜190milliontrees; Building28,944,175buildings 230(Availability)VOM,LSOABound-1mRasterGrid33,755LSOAs ariesCell 300(Accessibility)OSRoads,GreenIndividual3,919,444roadsegments; Spaces,VeriskBuild-Building157,274greenspaces ings28,944,175buildings Socio-EconomicDeprivationScoreLSOAPolygon32,742LSOAs Context 2SpectralIndicesNDVI,NDWI,NDBI100mRasterFullcoverageofEngland GridCell 4.6InequalityMeasurement 401",
+      "page": 15
+    },
+    {
+      "heading": "The3and300componentsmeasuredinthestudy,aswellasthedistancetowater",
+      "text": "402 variableintheVeriskbuildingsdataset,wereusedtocalculatetheGiniIndexatthe 403",
+      "page": 15
+    },
+    {
+      "heading": "LSOAlevel.Todoso,theunaggregatedmeasurementsforeachbuildingcategorisedas",
+      "text": "404 aresidentialunitwereconsideredintheanalysis.TheGinicoefficientwascalculated 405 usingtheDescToolspackageinRusingtheunbiasedparameter,whichcorrectsfor 406 differencesinsamplesize,asshownin2.Thiscorrectionmakesthecoefficienttohave 407 15 (cid:113) n−1arangebetween0and,unlikeregularGinimetricsthatcanonlybebetween0 408n and1. 409 (cid:32)(cid:33)(cid:80)(cid:80) nn |x−x|n iji=1j=1",
+      "page": 15
+    },
+    {
+      "heading": "G=×(2)",
+      "text": "(cid:80)unbiasedn n−12nx ii=1",
+      "page": 16
+    },
+    {
+      "heading": "With:",
+      "text": "410 -n=numberofbuildingsinagivenLSOA 411 -xandx=environmentalmetricfortwobuildings ij412 413",
+      "page": 16
+    },
+    {
+      "heading": "Tocreateasingle,robustmetricforthe“3-treeproximity”component,wemoved",
+      "text": "414 beyondasimplecountatasingledistance.Foreachbuilding,wecountedtheVOM- 415 derivedtreeswithinfiveconcentricbuffers(10,25,50,75,100m).Wethenfittedan 416 exponentialregressiontothesecountsagainstthebufferradius(FigureA7).Theslope 417 ofthisregressionwasusedasourfinalmetric.Thisapproachoffersamorenuanced 418 measureoftreeavailabilitythanasimplecount;asteeperslopeindicatesnotjustthe 419 presenceoftrees,butarapidincreaseintheirnumberasone’sviewexpandsoutwards, 420 proxyingforaricher,densertree-dominatedarea. 421",
+      "page": 16
+    },
+    {
+      "heading": "Thecanopycovercomponentwasnotconsideredintheinequalityestimations",
+      "text": "422 becauseitwasnotmeasuredatthebuildinglevelunliketheothermetrics.Becausethe 423",
+      "page": 16
+    },
+    {
+      "heading": "Ginicoefficientisameasureofinequalityforonearea(e.g.LSOA),itrequiresamore",
+      "text": "424 granularsamplingunit(e.g.residentialbuilding)fromwhichtoderivethecumulative 425 (green)wealth. 426 4.7StatisticalModelling 427",
+      "page": 16
+    },
+    {
+      "heading": "Toanalysethesocio-demographicdriversofenvironmentalinequality,weaddressed",
+      "text": "428 theinherentspatialautocorrelationinourLSOA-leveldatausingaSpatialError 429",
+      "page": 16
+    },
+    {
+      "heading": "Model(SEM),whichmodelsspatialdependenceintheerrorterm,toaccountfor",
+      "text": "430 unobserved,spatiallystructuredcovariates.Separatemodelswerefittedforeachofour 431 threeinequalityoutcomevariables:theGinicoefficientsfortreedistribution(slopeof 432 theexponentialregression),parkaccess(walkingdistancetoclosestpark),andblue 433 spaceaccess(straight-linedistancetoclosestwatersource). 434",
+      "page": 16
+    },
+    {
+      "heading": "Thepredictorvariablesforeachmodelincludedpopulationdensity,urban-rural",
+      "text": "435 classification,region,theIndexofMultipleDeprivation(IMD)score,andmeanspec- 436 tralindices(NDVI,NDWI,NDBI).Toinvestigatehowtherelationshipbetween 437 deprivationandgreen/bluespaceinequalityvariesacrossdifferentcontexts,weincor- 438 poratedinteractiontermsbetweentheIMDscoreandbothurban-ruralclassification 439 andregion.ThegeneralisedmodelisformalisedinEquation3. 440",
+      "page": 16
+    },
+    {
+      "heading": "G∼PopDensity+NDVI+NDWI+NDBI+",
+      "text": "unbiased (3)",
+      "page": 16
+    },
+    {
+      "heading": "IMD∗UrbanRural+IMD∗Region",
+      "text": "16 4.8Limitations 441",
+      "page": 16
+    },
+    {
+      "heading": "Whileourmethodologyiscapableofmeasuringeachindividualcomponentofthe3-",
+      "text": "442 30-300forallthebuildings,itdoessousingageneralassumptionoftreeshapesfrom 443 theVOM,whichcreatessquare-shapedpolygonsthatdon’trepresenttherealshapeof 444 trees.Moreover,thisiscalculatedfromamosaicofLiDARreadscollectedfrom2018 445 to2023;hence,changesinurbancanopyduetotreeremovalmightnotbeaccounted 446 for. 447",
+      "page": 17
+    },
+    {
+      "heading": "Measurementoftreevisibilityrequiresview-shedmodelling,whichinvolvesa3D",
+      "text": "448 representationofeachbuildinganditssurroundings.Thismethodisunfeasibleforthe 449 numberofbuildingsandtreesused,thuswhywedefinedthe3metricastreeproximity 450 insteadofvisibility. 451",
+      "page": 17
+    },
+    {
+      "heading": "CanopycoverwasestimatedusingtheVOM,whichrepresentedthehighest-",
+      "text": "452 resolutionandopenlyavailablevegetationproductatthenationallevelatthetime 453 ofthisstudy.However,itisworthnotingthatprivatelyowneddatasetsoftrees 454 thatincludecrownareaandheightexist,whichcouldbeusedasamoreaccurate 455 representationofurbantrees. 456",
+      "page": 17
+    },
+    {
+      "heading": "Inaddition,sometilesfromtheoriginalsourcewerecorruptedormissing,which",
+      "text": "457 limitedthecalculationforcertainareas,affectingboth3-and30-componentmodels 458 thatreliedontheVOMproduct(FigureA1). 459",
+      "page": 17
+    },
+    {
+      "heading": "Inasimilarfashion,the300calculationwasimpactedbythespatialextentofthe",
+      "text": "460 processing,meaningthatforagivenLADwithnopublicgreenspaces,theestimate 461 forallbuildingswouldbenull,orifthereisnodirectpathfromabuildingtoapark 462 intheroadnetwork,theaggregatedvaluewouldnotbedetermined.Vehicleroads 463 wereusedtomeasurethedistancetotheclosestaccesspointtoanopenpublicpark; 464 however,walkingpathsmightdifferinlengthfromthoseusedbyvehicles. 465",
+      "page": 17
+    },
+    {
+      "heading": "Finally,althoughtheVeriskdatasetweusedisproprietary,anopenversionwith",
+      "text": "466 thesamebuildingpolygonsisavailablethroughtheEDINAplatform,whichacademic 467 institutionmemberscanaccessfullyforresearchpurposes. 468 5CodeandDataAvailability 469",
+      "page": 17
+    },
+    {
+      "heading": "ThePythonandRcodeusedtomeasurethe3-30-300ruleand",
+      "text": "470 extractdatafromSentinel2imagesisavailableintheGitHubrepos- 471 itory(https://github.com/sdgresearch/3-30-300-analysis).Theaggregated 472 dataatLSOAandLADlevelsareavailableintheZenodorepository 473 (https://doi.org/10.5281/zenodo.16911970).Treesegmentationtilesareavailable 474 uponrequest.Twointeractivevisualisationdemosareavailableonthewebsitefor 475 thecoderepository:thefirstonedisplaysaggregateddataattheLSOAlevel,andthe 476 secondoneshowsthelocationofalltreesinEngland. 477 6Acknowledgements 478",
+      "page": 17
+    },
+    {
+      "heading": "ACZGissupportedbytheUKRICentreforDoctoralTraininginApplicationof",
+      "text": "479 ArtificialIntelligencetothestudyofEnvironmentalRisks(referenceEP/S022961/1). 480 17",
+      "page": 17
+    },
+    {
+      "heading": "AppendixASupplementaryMaterial",
+      "text": "481",
+      "page": 18
+    },
+    {
+      "heading": "Fig.A1:CoverageofthetreesegmentationprocessinallofEngland,includingrural",
+      "text": "andurbanareas.Blankpatchesrepresentareaswheredatawasmissingorcorrupted. 18",
+      "page": 18
+    },
+    {
+      "heading": "TableA1:SummaryofthenumberofurbanLowerLayerSuperOutputAreas",
+      "text": "(LSOAs)perregionthatfulfileachcomponentofthe3-30-300ruleandallofthem combined.Thevaluesforthecomponents(3,30,300)arepercentagesofthetotal urbanLSOAsinthatregion,whilethe3-30-300columnrepresentsthepercentage ofLSOAsfulfillingallcriteriasimultaneously. RegionNo.UrbanLSOAs3(%)30(%)300(%)3-30-300(%) NorthWest413541.00.77.40.0 NorthEast139321.41.710.10.1 YorkshireandTheHumber280227.51.46.70.0 WestMidlands306245.71.37.10.1 EastMidlands212239.60.84.30.0 EastofEngland274051.52.14.40.0 SouthWest241135.82.06.40.2 SouthEast454253.97.45.40.1 London499443.31.312.70.0 England2820142.22.37.40.1 19",
+      "page": 19
+    },
+    {
+      "heading": "Fig.A3:NDBIforeachLSOAinEngland",
+      "text": "20",
+      "page": 20
+    },
+    {
+      "heading": "Fig.A4:NDWIforeachLSOAinEngland",
+      "text": "21",
+      "page": 21
+    },
+    {
+      "heading": "TableA2:Spatialerrormodelresultsforinequality(Ginicoefficients)intreecount,parkdistance,andwater",
+      "text": "distanceattheLSOAlevelinEngland.Standarderrorsinparentheses.Significance:*p<0.05,**p<0.01, ***p<0.001. TreeCountGiniParkDistanceGiniWaterDistanceGini VariableEstimateSEEstimateSEEstimateSE (Intercept)0.13293***(0.00464)0.84046***(0.00622)0.72883***(0.00607) IMDScore0.00041**(0.00014)-0.00052*(0.00020)-0.00053**(0.00019) UrbanUrban-0.00168(0.00245)-0.01647***(0.00350)0.04937***(0.00333) RegionNorthEast-0.00389(0.00604)-0.02246**(0.00717)0.03714***(0.00739) RegionYorkshireandTheHumber-0.00694(0.00483)0.00046(0.00576)0.01955**(0.00594) RegionWestMidlands-0.03296***(0.00478)0.01479**(0.00570)0.00527(0.00588) RegionEastMidlands-0.02556***(0.00500)0.01338*(0.00601)0.00995(0.00617) RegionEastofEngland-0.04834***(0.00478)0.00405(0.00577)0.01542**(0.00591) RegionSouthWest-0.00706(0.00486)0.00918(0.00577)-0.00241(0.00596) RegionSouthEast-0.04572***(0.00425)0.00627(0.00505)0.01465**(0.00521) RegionLondon-0.04834***(0.00475)0.00471(0.00581)0.02851***(0.00592) populationdensity-0.00000**(0.00000)0.00000***(0.00000)0.00001***(0.00000) 2 NDVI-0.03152***(0.00450)-0.06172***(0.00642)-0.06950***(0.00612)2 NDWI0.02578***(0.00577)-0.01505(0.00794)-0.06503***(0.00771) NDBI0.14228***(0.01086)0.00453(0.01504)0.05381***(0.01458) IMDScore:UrbanUrban-0.00032**(0.00012)0.00023(0.00018)0.00103***(0.00017) IMDScore:RegionNorthEast0.00011(0.00013)0.00029(0.00018)0.00002(0.00017) IMDScore:RegionYorkshireandTheHumber-0.00010(0.00011)-0.00010(0.00015)0.00010(0.00015) IMDScore:RegionWestMidlands-0.00035**(0.00011)-0.00035*(0.00016)-0.00029(0.00015) IMDScore:RegionEastMidlands-0.00025(0.00013)0.00026(0.00018)0.00011(0.00017) IMDScore:RegionEastofEngland-0.00000(0.00013)0.00013(0.00019)-0.00034(0.00018) IMDScore:RegionSouthWest-0.00030*(0.00013)-0.00021(0.00019)-0.00029(0.00018) IMDScore:RegionSouthEast0.00002(0.00012)-0.00005(0.00017)-0.00035*(0.00017) IMDScore:RegionLondon0.00011(0.00014)-0.00079***(0.00019)-0.00089***(0.00018) Modeldiagnostics λ0.644970.454950.55726 AsymptoticSE(λ)0.005150.006520.00583 Waldstatistic(λ)15701.004863.309120.60 Loglikelihood42760.5429928.6732469.97 MLresidualvariance0.003430.008270.00683 AIC-85469.00-59805.00-64888.00",
+      "page": 22
+    },
+    {
+      "heading": "ResearchTreesOutsideWoodland(TOW)datasetandthisstudy’ssegmentation",
+      "text": "approach,byregion. TOWDatasetThisStudy Region ²²CountTotalArea(m)CountTotalArea(m) NorthWest4,155,143613,505,0958,205,6131,005,555,299 NorthEast1,571,966229,361,7112,263,592699,848,693 YorkshireandtheHumber3,444,172534,527,5596,425,4011,040,430,826 WestMidlands4,252,559833,297,9495,164,0301,223,817,794 EastMidlands3,778,562653,799,8304,897,7321,060,999,126 EastofEngland4,941,670959,028,8546,166,4591,718,896,157 SouthWest6,583,6861,474,924,3544,911,0442,512,667,899 SouthEast6,157,7041,370,145,6179,419,6792,718,374,849 London1,418,131167,073,5133,689,884128,330,021 23",
+      "page": 23
+    },
+    {
+      "heading": "Fig.A5:ScatterplotbetweenthethreeGinicoefficientsandtheircorresponding",
+      "text": "environmentalmetricforeachregioninEngland.Sizedepictspopulationdensity,while colourspointtoIMDclassification.A:Treecountslope,B:Walkingdistancetoclosest park,andC:Distancetoclosestwatersource. 24",
+      "page": 24
+    },
+    {
+      "heading": "Fig.A6:Scatterplotbetweentheaggregated3-30-300metricsandwaterdistance",
+      "text": "againstpopulationdensityandeachvariableintheMultipleDeprivationIndex(IMD) forallurbanLSOAsinEngland.Treecountistheaverageforeachbuildingat25m radiusfromthecentroid. 25",
+      "page": 25
+    },
+    {
+      "heading": "Fig.A7:Calculationofthetreeindexusingthebufferedcount.Adepictsaresidential",
+      "text": "unitwithalowslopeintheregression,whileBrepresentsahousewithahighslope. Cshowstheregressionforbothbuildings.",
+      "page": 26
+    },
+    {
+      "heading": "References",
+      "text": "482 [1]UnitedNations,P.D.DepartmentofEconomicandSocialAffairs:WorldUrban- 483 izationProspects:the2018Revision.UnitedNations,NewYork(2019).OCLC: 484 1120698127 485 [2]Kowarik,I.,Fischer,L.K.,Haase,D.,Kabisch,N.,Kleinschroth,F.,Konijnendijk, 486",
+      "page": 26
+    },
+    {
+      "heading": "C.,Straka,T.M.,Haaren,C.:Promotingurbanbiodiversityforthebenefitof",
+      "text": "487 peopleandnature.NatureReviewsBiodiversity1(4),214–232(2025)https://doi. 488 26 org/10.1038/s44358-025-00035-y.Publisher:NaturePublishingGroup.Accessed 489 2025-05-30 490 [3]Juergens,C.,Meyer-Heß,M.F.:ExperimentalAnalysisofGeo-spatialDatato 491",
+      "page": 26
+    },
+    {
+      "heading": "EvaluateUrbanGreenspace:ACaseStudyinDortmund,Germany.KN-Journal",
+      "text": "492 ofCartographyandGeographicInformation72(2),153–171(2022)https://doi. 493 org/10.1007/s42489-022-00107-5.Accessed2025-01-30 494 [4]Boehnke,D.,Krehl,A.,M¨ormann,K.,Volk,R.,Lu¨tzkendorf,T.,Naber,E., 495",
+      "page": 27
+    },
+    {
+      "heading": "Becker,R.,Norra,S.:MappingUrbanGreenandItsEcosystemServicesat",
+      "text": "496",
+      "page": 27
+    },
+    {
+      "heading": "Microscale—AMethodologicalApproachforClimateAdaptationandBiodiver-",
+      "text": "497 sity.Sustainability14(15),9029(2022)https://doi.org/10.3390/su14159029. 498",
+      "page": 27
+    },
+    {
+      "heading": "Number:15Publisher:MultidisciplinaryDigitalPublishingInstitute.Accessed",
+      "text": "499 2025-01-30 500 [5]Derkzen,M.L.,Teeffelen,A.J.A.,Verburg,P.H.:REVIEW:Quantifyingurban 501 ecosystemservicesbasedonhigh-resolutiondataofurbangreenspace:an 502 assessmentforRotterdam,theNetherlands.JournalofAppliedEcology 503 52(4),1020–1032(2015)https://doi.org/10.1111/1365-2664.12469.eprint: 504 https://onlinelibrary.wiley.com/doi/pdf/10.1111/1365-2664.12469.Accessed 505 2025-01-30 506 [6]Seidl,M.,Saifane,M.:Agreenintensityindextobetterassessthemulti- 507 plefunctionsofurbanvegetationwithanapplicationtoParismetropolitan 508 area.Environment,DevelopmentandSustainability23(10),15204–15224(2021) 509 https://doi.org/10.1007/s10668-021-01293-4.Accessed2025-01-30 510 [7]Kabisch,N.,Strohbach,M.,Haase,D.,Kronenberg,J.:Urbangreenspace 511 availabilityinEuropeancities.EcologicalIndicators70,586–596(2016)https: 512 //doi.org/10.1016/j.ecolind.2016.02.029.Accessed2024-12-12 513 [8]Robinson,J.M.,Mavoa,S.,Robinson,K.,Brindley,P.:Urbancentregreenmetrics 514 inGreatBritain:Ageospatialandsocioecologicalstudy.PLOSONE17(11), 515 0276962(2022)https://doi.org/10.1371/journal.pone.0276962.Publisher:Public 516",
+      "page": 27
+    },
+    {
+      "heading": "LibraryofScience.Accessed2024-07-01",
+      "text": "517 [9]Smith,E.S.,Fleet,C.,Gosal,A.S.,King,S.,Walker,H.,Willey,I.,Scott,C.E.: 518",
+      "page": 27
+    },
+    {
+      "heading": "Whichtreesmattermost?Theroleofprivategardentreesandwoodlandcoverfor",
+      "text": "519 3–30-300successinsevenEnglishcities.UrbanForestry&UrbanGreening116, 520 129221(2026)https://doi.org/10.1016/j.ufug.2025.129221.Accessed2026-01-19 521 [10]Konijnendijk,C.C.:Evidence-basedguidelinesforgreener,healthier,more 522 resilientneighbourhoods:Introducingthe3–30–300rule.JournalofForestry 523 Research34(3),821–830(2023)https://doi.org/10.1007/s11676-022-01523-z. 524",
+      "page": 27
+    },
+    {
+      "heading": "Accessed2024-07-31",
+      "text": "525 [11]Zheng,Y.,Lin,T.,Hamm,N.A.S.,Liu,J.,Zhou,T.,Geng,H.,Zhang,J.,Ye,H., 526 27",
+      "page": 27
+    },
+    {
+      "heading": "Zhang,G.,Wang,X.,Chen,T.:Quantitativeevaluationofurbangreenexposure",
+      "text": "527 anditsimpactonhumanhealth:Acasestudyonthe3–30-300greenspacerule. 528",
+      "page": 28
+    },
+    {
+      "heading": "ScienceofTheTotalEnvironment924,171461(2024)https://doi.org/10.1016/",
+      "text": "529 j.scitotenv.2024.171461.Accessed2024-06-20 530 [12]Browning,M.H.E.M.,Locke,D.H.,Konijnendijk,C.,Labib,S.M.,Rigolon,A., 531",
+      "page": 28
+    },
+    {
+      "heading": "Yeager,R.,Bardhan,M.,Berland,A.,Dadvand,P.,Helbich,M.,Li,F.,Li,",
+      "text": "532",
+      "page": 28
+    },
+    {
+      "heading": "H.,James,P.,Klompmaker,J.,Reuben,A.,Roman,L.A.,Tsai,W.-L.,Pat-",
+      "text": "533 wary,M.,O’Neil-Dunne,J.,Ossola,A.,Wang,R.,Yang,B.,Yi,L.,Zhang, 534",
+      "page": 28
+    },
+    {
+      "heading": "J.,Nieuwenhuijsen,M.:Measuringthe3-30-300ruletohelpcitiesmeetnature",
+      "text": "535 accessthresholds.ScienceofTheTotalEnvironment907,167739(2024)https: 536 //doi.org/10.1016/j.scitotenv.2023.167739.Accessed2024-12-09 537 [13]Nieuwenhuijsen,M.J.,Dadvand,P.,M´arquez,S.,Bartoll,X.,Barboza,E.P., 538",
+      "page": 28
+    },
+    {
+      "heading": "Cirach,M.,Borrell,C.,Zijlema,W.L.:Theevaluationofthe3-30-300green",
+      "text": "539 spaceruleandmentalhealth.EnvironmentalResearch215,114387(2022)https: 540 //doi.org/10.1016/j.envres.2022.114387.Accessed2024-06-20 541 [14]Croeser,T.,Sharma,R.,Weisser,W.W.,Bekessy,S.A.:Acutecanopydeficits 542 inglobalcitiesexposedbythe3-30-300benchmarkforurbannature.Nature 543",
+      "page": 28
+    },
+    {
+      "heading": "Communications15(1),9333(2024)https://doi.org/10.1038/s41467-024-53402-2",
+      "text": "544 .Publisher:NaturePublishingGroup.Accessed2024-12-10 545 [15]Giannico,O.V.,Sardone,R.,Bisceglia,L.,Addabbo,F.,Pirotti,F.,Minerba,S., 546",
+      "page": 28
+    },
+    {
+      "heading": "Mincuzzi,A.:ThemortalityimpactsofgreeningItaly.NatureCommunications",
+      "text": "547 15(1),10452(2024)https://doi.org/10.1038/s41467-024-54388-7.Publisher: 548",
+      "page": 28
+    },
+    {
+      "heading": "NaturePublishingGroup.Accessed2024-12-10",
+      "text": "549 [16]Battisti,L.,Aimar,F.,Giacco,G.,Devecchi,M.:UrbanGreenDevelopmentand 550",
+      "page": 28
+    },
+    {
+      "heading": "ResilientCities:AFirstInsightintoUrbanForestPlanninginItaly.Sustain-",
+      "text": "551 ability15(15),12085(2023)https://doi.org/10.3390/su151512085.Publisher: 552",
+      "page": 28
+    },
+    {
+      "heading": "MultidisciplinaryDigitalPublishingInstitute.Accessed2025-11-03",
+      "text": "553 [17]Lopez,M.A.,Marco,A.D.,Anav,A.,Sorrentino,B.,Paoletti,E.,Manzini,J., 554",
+      "page": 28
+    },
+    {
+      "heading": "Hoshika,Y.,Sicard,P.:The3–30–300ruleCompliance:Ageospatialtoolfor",
+      "text": "555 urbanplanning.LandscapeandUrbanPlanning261,105396(2025)https://doi. 556 org/10.1016/j.landurbplan.2025.105396.Accessed2026-01-19 557 [18]Zhang,L.,Tan,P.Y.:AssociationsbetweenUrbanGreenSpacesandHealthare 558 DependentontheAnalyticalScaleandHowUrbanGreenSpacesareMeasured. 559",
+      "page": 28
+    },
+    {
+      "heading": "InternationalJournalofEnvironmentalResearchandPublicHealth16(4),578",
+      "text": "560 (2019)https://doi.org/10.3390/ijerph16040578.Accessed2025-07-02 561 [19]Battiston,A.,Schifanella,R.:Ontheneedforamulti-dimensionalframework 562 tomeasureaccessibilitytourbangreen.npjUrbanSustainability4(1),10 563 (2024)https://doi.org/10.1038/s42949-024-00147-y.Publisher:NaturePublish- 564 ingGroup.Accessed2025-07-02 565 28 [20]Martin,A.J.F.,Conway,T.M.:UsingtheGiniIndextoquantifyurban 566 greeninequality:Asystematicreviewandrecommendedreportingstandards. 567 LandscapeandUrbanPlanning254,105231(2025)https://doi.org/10.1016/j. 568 landurbplan.2024.105231.Accessed2025-03-21 569 [21]Creed,C.,Carvalho,J.S.:Exploringtheuserexperience,quality,andprovisionof 570 urbangreenspace:Amixed-methodapproach.UrbanForestry&UrbanGreening 571 100,128470(2024)https://doi.org/10.1016/j.ufug.2024.128470.Accessed2026- 572 02-02 573 [22]Roussel,J.-R.,Auty,D.,Coops,N.C.,Tompalski,P.,Goodbody,T.R.H.,Meador, 574",
+      "page": 28
+    },
+    {
+      "heading": "A.S.,Bourdon,J.-F.,Boissieu,F.,Achim,A.:lidR:AnRpackageforanalysis",
+      "text": "575 ofAirborneLaserScanning(ALS)data.RemoteSensingofEnvironment251, 576 112061(2020)https://doi.org/10.1016/j.rse.2020.112061.Accessed2024-07-31 577 [23]Dalponte,M.,Coomes,D.A.:Tree-centricmappingofforestcarbondensity 578 fromairbornelaserscanningandhyperspectraldata.MethodsinEcologyand 579",
+      "page": 29
+    },
+    {
+      "heading": "Evolution7(10),1236–1245(2016)https://doi.org/10.1111/2041-210X.12575",
+      "text": "580 .eprint:https://onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12575. 581",
+      "page": 29
+    },
+    {
+      "heading": "Accessed2024-07-31",
+      "text": "582 [24]Montero,D.,Aybar,C.,Mahecha,M.D.,Martinuzzi,F.,S¨ochting,M.,Wieneke, 583",
+      "page": 29
+    },
+    {
+      "heading": "S.:Astandardizedcatalogueofspectralindicestoadvancetheuseofremote",
+      "text": "584 sensinginEarthsystemresearch.ScientificData10(1),197(2023)https://doi. 585 org/10.1038/s41597-023-02096-0.Publisher:NaturePublishingGroup.Accessed 586 2025-07-31 587 [25]Zha,Y.,Gao,J.,Ni,S.:Useofnormalizeddifferencebuilt-upindexinauto- 588 maticallymappingurbanareasfromTMimagery.InternationalJournalof 589",
+      "page": 29
+    },
+    {
+      "heading": "RemoteSensing24(3),583–594(2003)https://doi.org/10.1080/01431160304987",
+      "text": "590 .Publisher:Taylor&Franciseprint:https://doi.org/10.1080/01431160304987. 591",
+      "page": 29
+    },
+    {
+      "heading": "Accessed2025-07-04",
+      "text": "592 [26]Zheng,Y.,Tang,L.,Wang,H.:Animprovedapproachformonitoringurbanbuilt- 593 upareasbycombiningNPP-VIIRSnighttimelight,NDVI,NDWI,andNDBI. 594 JournalofCleanerProduction328,129488(2021)https://doi.org/10.1016/j. 595 jclepro.2021.129488.Accessed2025-07-04 596 [27]Martinez,A.d.l.I.,Labib,S.M.:Demystifyingnormalizeddifferencevegetation 597 index(NDVI)forgreennessexposureassessmentsandpolicyinterventionsin 598 urbangreening.EnvironmentalResearch220,115155(2023)https://doi.org/10. 599 1016/j.envres.2022.115155.Accessed2025-07-04 600 [28]Li,W.,Saphores,J.-D.M.,Gillespie,T.W.:Acomparisonoftheeconomicbenefits 601 ofurbangreenspacesestimatedwithNDVIandwithhigh-resolutionlandcover 602 data.LandscapeandUrbanPlanning133,105–117(2015)https://doi.org/10. 603 1016/j.landurbplan.2014.09.013.Accessed2025-07-04 604 29 [29]Yang,X.,Zhao,S.,Qin,X.,Zhao,N.,Liang,L.:MappingofUrbanSurfaceWater 605",
+      "page": 29
+    },
+    {
+      "heading": "BodiesfromSentinel-2MSIImageryat10mResolutionviaNDWI-BasedImage",
+      "text": "606",
+      "page": 30
+    },
+    {
+      "heading": "Sharpening.RemoteSensing9(6),596(2017)https://doi.org/10.3390/rs9060596",
+      "text": "607 .Number:6Publisher:MultidisciplinaryDigitalPublishingInstitute.Accessed 608 2025-07-04 609 30",
+      "page": 30
+    }
+  ],
+  "figures_meta": [
+    {
+      "label": "Fig.1",
+      "caption": "Contrastingspatialdistributionsofpercapitaandabsolutetreedensityin",
+      "page": 4
+    },
+    {
+      "label": "Fig.2",
+      "caption": "Populationmeetingeachcomponentofthe3-30-300ruleacrosstheregionsof",
+      "page": 5
+    },
+    {
+      "label": "Fig.3",
+      "caption": "EnvironmentalinequalityinaccesstogreeninfrastructureacrossEngland.",
+      "page": 7
+    },
+    {
+      "label": "Fig.4",
+      "caption": "SpatialDistributionofCanopyCoverandEnvironmentalInequalityinEng-",
+      "page": 8
+    },
+    {
+      "label": "Fig.5",
+      "caption": "Socioeconomicstratificationofcorrelationsbetweenenvironmentalmetrics.",
+      "page": 10
+    }
+  ],
+  "stats_candidates": [
+    {
+      "number": "0.1",
+      "unit": "%",
+      "context_sentence": "13 Natureaccessisincreasinglyrecognisedasapublichealthandequityimperative, 14 yetcitieslackstandardisedwaystomeasurewhobenefitsfromgreeninfrastruc- 15 ture.Wepresentthefirstnational,building-levelassessmentofthe3–30–300 16 urbangreeningruleacrossEngland,integratinghigh-performancecomputing 17 withopenLiDARandgeospatialdatasets.Ourframeworkquantifiesproximity, 18 availability,andaccessibilityofgree"
+    },
+    {
+      "number": "70",
+      "unit": "%",
+      "context_sentence": "33 resilienceandpublichealth,providingcooling,pollutionmitigation,andopportunities 34 forphysicalactivityandsocialinteraction.Yetdespitethisrecognisedimportance, 35 citiesstilllackstandardised,high-resolutionmetricstoassesswhobenefitsfromnat- 36 uralinfrastructureandhowthesebenefitsaredistributedacrossthepopulation.This 37 measurementgapisespeciallyproblematicforunderstandingenvironmentalinequal- "
+    },
+    {
+      "number": "30",
+      "unit": "%",
+      "context_sentence": "63 toaddressthisgap,proposingthateveryresidentshouldseeatleast3trees,live 64 inaneighbourhoodwith30%canopycover,andbewithin300metersofapublic 65 park[10–12].However,despiteitsglobaladoptionincitiesrangingfromSingapore 66 toNewYork[13–17],therulecurrentlylacksarobustmethodologicalfoundation 67 forstandardisedassessmentacrossdifferentgeographicandsocioeconomiccontexts."
+    },
+    {
+      "number": "40",
+      "unit": "%",
+      "context_sentence": "137 example,almost40%oftheregion’s8.2millionresidentsareestimatedtolivewithin 138 25mofatleast3treesfromtheirhomes,withnocleardifferencebetweeninnerand 139 outerpartsofthecity.Thispatternofhighattainmentholdstrueacrossthecountry, 140 fromtheNorthWest,wheremostofits6.5millionpeoplemeetthestandard,tothe 141"
+    },
+    {
+      "number": "0.7",
+      "unit": "×",
+      "context_sentence": "351 -z=canopyheightatagivenlocation 352 -µ=18(meanoftheGaussianfunction) 353 -σ=7(spreadoftheGaussianfunction) 354 -minsize=7(minimumsearchwindowsize) 355 13 -maxsize=0.7×P(z)(maximumsearchwindowbasedonthe95thpercentile) 95356 357"
+    },
+    {
+      "number": "358",
+      "unit": "km",
+      "context_sentence": "358 kmtiles,followingthedefinitionintheBritishNationalGridreleasedbytheOrdnance 359 Survey(OS),whichwerethensavedasgeoparquetfiles."
+    },
+    {
+      "number": "10",
+      "unit": "%",
+      "context_sentence": "388 torswerecalculatedusingSentinel2scenesfrom2024withvaluesunder10%cloud 389 coveragethroughtheGoogleEarthEnginePythonAPI[24].Thesewereestimated 390 asthemaximumfortheentireyearforthestudyregion.Toaggregatethevaluesat 391 theLSOAlevel,weusedthemedianvalueforallpixelsfallingintothepolygon."
+    }
+  ],
+  "tables": []
+}

@@ -769,6 +769,14 @@ body.tab-map-active #map-hint.hint-hidden { opacity: 0; }
 
 .card-link-btn.secondary:hover { background: rgba(61, 138, 122, 0.08); }
 
+.card-link-btn.storyboard {
+  background: var(--orange);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+
+.card-link-btn.storyboard:hover { background: var(--orange-dark); }
+
 /* =========================================================
    GLOBE TOOLTIP (dark — rendered inside canvas overlay)
    ========================================================= */
@@ -1168,6 +1176,17 @@ button:focus-visible { outline: 2px solid var(--teal); }
   margin: 0 auto;
 }
 
+.storyboards-disclaimer {
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+}
+
 .storyboard-card {
   display: flex;
   flex-direction: column;
@@ -1297,7 +1316,47 @@ button:focus-visible { outline: 2px solid var(--teal); }
   .btn-register { width: 100%; justify-content: center; }
   .agenda-item { grid-template-columns: 1fr; gap: 0.35rem; }
   .speakers-grid { grid-template-columns: 1fr; }
-  .tab-nav { padding: 0 1rem; }
+
+  /* Header — keep logo + nav within the viewport */
+  .site-header { padding: 0 0.875rem; }
+  .header-inner { gap: 0.5rem; }
+  .header-logo { height: 36px; max-height: 36px; max-width: 150px; }
+  .header-nav { gap: 0.4rem; }
+  .header-nav a {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.5rem;
+    line-height: 1.2;
+  }
+
+  /* Tabs — wrap into two fully-visible rows (3 + 2) so every tab is
+     reachable without horizontal scrolling. --tabnav-h is bumped to match
+     the taller bar so the globe / storyboard-frame height calcs stay correct. */
+  :root { --tabnav-h: 88px; }
+  .tab-nav {
+    height: auto;
+    min-height: var(--tabnav-h);
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    flex: 1 0 30%;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0.85rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab-btn.is-active {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--teal);
+  }
+
+  /* Mobile-only tab order: swap Projects and Survey */
+  .tab-btn[data-tab="event"]       { order: 1; }
+  .tab-btn[data-tab="map"]         { order: 2; }
+  .tab-btn[data-tab="survey"]      { order: 3; }
+  .tab-btn[data-tab="storyboards"] { order: 4; }
+  .tab-btn[data-tab="projects"]    { order: 5; }
+
   .projects-grid { grid-template-columns: 1fr; padding: 1.25rem 1rem; gap: 1rem; }
   .storyboards-grid { grid-template-columns: 1fr; padding: 1.25rem 1rem; gap: 1rem; }
   .survey-wrap { padding: 1.25rem 1rem 2rem; }
